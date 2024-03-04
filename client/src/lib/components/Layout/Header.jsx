@@ -13,13 +13,13 @@ const Header = () => {
   const firstBlock = pathName.split("/")[1];
 
   return (
-    <div className="bg-primary flex justify-center pt-4">
-      <div className="section flex items-center justify-between">
-        <div className="flex font-medium items-center pb-4 gap-x-2 w-1/6">
+    <div className="flex justify-center pt-4 bg-primary">
+      <div className="flex items-center justify-between section">
+        <div className="flex items-center w-1/6 pb-4 font-medium gap-x-2">
           <Image src={logo} alt="logo" width={25} height={25} />
           <p className="text-tertiary text-[16px] font-bold">CREX</p>
         </div>
-        <div className="w-full flex justify-end items-center">
+        <div className="flex items-center justify-end w-full">
           <ul className="flex text-white  items-center gap-x-3 text-[14px]">
             {menuItems.map((item, index) => (
               <Link key={index} href={item.href}>
