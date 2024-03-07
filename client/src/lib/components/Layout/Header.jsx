@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import logo from "../../../../public/logo.webp";
 import { usePathname } from "next/navigation";
 import { menuItems } from "@/lib/utils/data";
@@ -14,12 +13,12 @@ const Header = () => {
 
   return (
     <div className="flex justify-center pt-4 bg-primary">
-      <div className="flex items-center justify-between section">
-        <div className="flex items-center w-1/6 pb-4 font-medium gap-x-2">
+      <div className="flex items-center justify-between w-full lg:w-[60%]">
+        <div className="flex items-center w-full pb-4 ml-5 font-medium lg:ml-0 lg:w-1/6 gap-x-2">
           <Image src={logo} alt="logo" width={25} height={25} />
           <p className="text-tertiary text-[16px] font-bold">CREX</p>
         </div>
-        <div className="flex items-center justify-end w-full">
+        <div className="items-center justify-end hidden w-full lg:flex">
           <ul className="flex text-white  items-center gap-x-3 text-[14px]">
             {menuItems.map((item, index) => (
               <Link key={index} href={item.href}>
@@ -38,7 +37,11 @@ const Header = () => {
               </Link>
             ))}
           </ul>
-          <ThemeToggler />
+          <ThemeToggler
+            styles="flex items-center pb-4 ml-5 text-white"
+            sunColor="white"
+            moonColor="white"
+          />
         </div>
       </div>
     </div>

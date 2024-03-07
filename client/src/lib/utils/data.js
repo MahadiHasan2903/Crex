@@ -1,6 +1,6 @@
 import { MdOutlineExpandMore } from "react-icons/md";
 import { GiCricketBat } from "react-icons/gi";
-import teamLogo from "../../../public/logo.webp";
+import coverImage from "../../../public/cover.png";
 
 export const menuItems = [
   { label: "Home", href: "/" },
@@ -15,141 +15,50 @@ export const menuItems = [
   { label: "Rankings", href: "/rankings" },
 ];
 
-export const matches = [
+export const footerItems = [
+  { label: "About", href: "#about" },
+  { label: "Grievance", href: "#grievance" },
+  { label: "Refund Policy", href: "#refund-policy" },
+  {
+    label: "Privacy Policy",
+    href: "#privacy-policy",
+  },
+  { label: "Terms and Conditions", href: "#terms-and-conditions" },
+  { label: "Contact Us", href: "#contact-us" },
+];
+
+export const dummyNews = [
   {
     id: 1,
-    status: "Live",
-    tournament: "PSL 2024",
-    matchDetails: "20th Match, Rawalpindi Cricket Stadium, Rawalpindi",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "BD",
-      score: "79/2",
-      overs: "9.4",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "OPP",
-      score: "120/3",
-      overs: "15.2",
-    },
-    decision: "BD won the toss and chose to bowl",
+    coverImage: coverImage,
+    intro: "Laura and Mooney- Partnership Analysis",
+    headLine:
+      " WPL 2024, Match 13 - Mooney-Wolvaardt Opening Partnership Leads Giants to First Win",
+    description:
+      "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
+    pubTime: "56 minutes ago",
+    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
   },
   {
-    id: 2,
-    status: "Upcoming",
-    tournament: "PSL 2024",
-    matchDetails: "21st Match, Gaddafi Stadium, Lahore",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "KK",
-      score: "-",
-      overs: "-",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "MS",
-      score: "-",
-      overs: "-",
-    },
-    decision: "To be decided",
-  },
-
-  {
-    id: 3,
-    status: "Completed",
-    tournament: "PSL 2024",
-    matchDetails: "22nd Match, Multan Cricket Stadium, Multan",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "IU",
-      score: "145/5",
-      overs: "20",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "QG",
-      score: "142/8",
-      overs: "20",
-    },
-    decision: "IU won by 3 runs",
-  },
-
-  {
-    id: 4,
-    status: "Live",
-    tournament: "PSL 2024",
-    matchDetails: "23rd Match, National Stadium, Karachi",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "LQ",
-      score: "105/4",
-      overs: "13.5",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "PZ",
-      score: "120/2",
-      overs: "14.2",
-    },
-    decision: "PZ won the toss and chose to bat",
+    id: 1,
+    coverImage: coverImage,
+    intro: "Laura and Mooney- Partnership Analysis",
+    headLine:
+      " WPL 2024, Match 13 - Mooney-Wolvaardt Opening Partnership Leads Giants to First Win",
+    description:
+      "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
+    pubTime: "56 minutes ago",
+    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
   },
   {
-    id: 5,
-    status: "Live",
-    tournament: "PSL 2024",
-    matchDetails: "20th Match, Rawalpindi Cricket Stadium, Rawalpindi",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "BD",
-      score: "79/2",
-      overs: "9.4",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "OPP",
-      score: "120/3",
-      overs: "15.2",
-    },
-    decision: "BD won the toss and chose to bowl",
-  },
-  {
-    id: 6,
-    status: "Upcoming",
-    tournament: "PSL 2024",
-    matchDetails: "21st Match, Gaddafi Stadium, Lahore",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "KK",
-      score: "-",
-      overs: "-",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "MS",
-      score: "-",
-      overs: "-",
-    },
-    decision: "To be decided",
-  },
-
-  {
-    id: 7,
-    status: "Upcoming",
-    tournament: "PSL 2024",
-    matchDetails: "24th Match, Rawalpindi Cricket Stadium, Rawalpindi",
-    team1: {
-      logo: teamLogo,
-      abbreviation: "MS",
-      score: "-",
-      overs: "-",
-    },
-    team2: {
-      logo: teamLogo,
-      abbreviation: "QG",
-      score: "-",
-      overs: "-",
-    },
-    decision: "To be decided",
+    id: 1,
+    coverImage: coverImage,
+    intro: "Laura and Mooney- Partnership Analysis",
+    headLine:
+      " WPL 2024, Match 13 - Mooney-Wolvaardt Opening Partnership Leads Giants to First Win",
+    description:
+      "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
+    pubTime: "56 minutes ago",
+    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
   },
 ];

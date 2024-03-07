@@ -6,6 +6,8 @@ import Header from "@/lib/components/Layout/Header";
 import Footer from "@/lib/components/Layout/Footer";
 import { ThemeProvider } from "@/lib/theme/ThemeProvider";
 import AuthProvider from "@/lib/config/AuthProvider";
+import MobileFooter from "@/lib/components/Layout/MobileFooter";
+import ResponsiveFooter from "@/lib/utils/ResponsiveFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             {children}
-            <Footer />
+            <ResponsiveFooter />
           </ThemeProvider>
         </AuthProvider>
       </body>
