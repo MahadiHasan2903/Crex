@@ -4,8 +4,8 @@ import coverImage from "../../../public/cover.png";
 
 export const menuItems = [
   { label: "Home", href: "/" },
-  { label: "Series", href: "/series", icon: <MdOutlineExpandMore /> },
-  { label: "Fixtures", href: "/fixtures" },
+  { label: "Series", href: "#series", icon: <MdOutlineExpandMore /> },
+  { label: "Fixtures", href: "/fixtures/match-list" },
   {
     label: "States Corner",
     href: "/states",
@@ -13,6 +13,12 @@ export const menuItems = [
     icon: <GiCricketBat color="#F3AD61" />,
   },
   { label: "Rankings", href: "/rankings" },
+];
+
+export const fixtureLinks = [
+  { href: "/fixtures/match-list", label: "Days" },
+  { href: "/fixtures/series-list", label: "Series" },
+  { href: "/fixtures/team-list", label: "Teams" },
 ];
 
 export const footerItems = [
@@ -37,28 +43,24 @@ export const dummyNews = [
     description:
       "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
     pubTime: "56 minutes ago",
-    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
+    tags: ["INDIA", "ENGLAND", "ROHIT SHARMA", "ENGLAND TOUR OF INDIA 2024"],
   },
   {
-    id: 1,
+    id: 2,
     coverImage: coverImage,
-    intro: "Laura and Mooney- Partnership Analysis",
-    headLine:
-      " WPL 2024, Match 13 - Mooney-Wolvaardt Opening Partnership Leads Giants to First Win",
-    description:
-      "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
-    pubTime: "56 minutes ago",
-    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
+    intro: "New Player Joining - Exciting Times Ahead",
+    headLine: " Exciting Times for Team as Star Player Joins Squad",
+    description: "Team management expresses optimism...",
+    pubTime: "2 hours ago",
+    tags: ["CRICKET", "TEAM NEWS", "TRANSFERS"],
   },
   {
-    id: 1,
+    id: 3,
     coverImage: coverImage,
-    intro: "Laura and Mooney- Partnership Analysis",
-    headLine:
-      " WPL 2024, Match 13 - Mooney-Wolvaardt Opening Partnership Leads Giants to First Win",
-    description:
-      "In a high-scoring encounter, Gujarat Giants secured a 19-run victory against Royal Challengers Bangalore, thanks to stellar performances by Laura Wolvaardt and Beth Mooney. The duo's formidable partnership of 140 runs wreaked havoc on the RCB bowling attack, propelling the Giants to a challenging total. Wolvaardt's aggressive innings of 76 off 45 balls and Mooney's impressive 85 off 51 deliveries displayed their dominance with the bat. Laura Wolvaardt showcased a masterful innings, scoring a fluent 76 off 45 balls with precision in her shot selection, accumulating 13 fours without resorting to aggressive strokes. Beth Mooney complemented Wolvaardt's innings by ensuring swift runs between the wickets, allowing Wolvaardt to dominate against the quicks. Mooney, known for her consistency, tactically paced her innings, turning a 21-ball 32 into a composed 82 off 51 balls, showcasing her proficiency in scoring against spinners. In contrast, Smriti Mandhana's team experienced a challenging day as none of their batters managed to convert starts into substantial innings. This inability to build significant partnerships allowed the Gujarat Giants to assert control by consistently taking wickets. Despite a late onslaught from Georgia Wareham, who scored a rapid 48 off 22 balls, the valiant effort proved futile in preventing a comprehensive defeat for Smriti Mandhana's side.",
-    pubTime: "56 minutes ago",
-    tags: "INDIA ENGLAND ROHIT SHARMA ENGLAND TOUR OF INDIA 2024",
+    intro: "Record-Breaking Performance in T20 Series",
+    headLine: " Player Shatters Records in T20 Series Victory",
+    description: "In a stunning display of skill and determination...",
+    pubTime: "5 hours ago",
+    tags: ["T20", "RECORDS", "PLAYER PERFORMANCE"],
   },
 ];

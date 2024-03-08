@@ -1,7 +1,7 @@
 import React from "react";
 
-const FixturesPage = () => {
-  return <div>FixturesPage</div>;
+const Fixtures = () => {
+  return <div>Fixtures</div>;
 };
 
-export default FixturesPage;
+export default Fixtures;

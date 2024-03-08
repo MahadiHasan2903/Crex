@@ -18,7 +18,7 @@ const NewsCard = ({ news }) => {
 
   return (
     <div className="mt-3 mb-6 border-b-2 border-[#F0F0F0] dark:border-primary">
-      <p className=" cursor-pointer font-bold text-[22px] dark:text-[#CFD1D3] text-black">
+      <p className="cursor-pointer font-bold text-[22px] dark:text-[#CFD1D3] text-black">
         {intro}
       </p>
       <div className="flex items-center justify-between mt-8 mb-12">
@@ -32,10 +32,15 @@ const NewsCard = ({ news }) => {
           />
         </div>
         <div className="w-[50%] text-left dark:text-[#CFD1D3] text-black  ">
-          <p className="text-[13px] dark:text-[#6EB4EF] text-[#1860A6]">
-            {tags}
-          </p>
-          <p className="text-[23px] mt-5 font-bold  cursor-pointer">
+          <div className="flex items-center gap-x-3">
+            {tags.map((tag, index) => (
+              <p className="text-[13px] dark:text-[#6EB4EF] text-[#1860A6]">
+                {tag}
+              </p>
+            ))}
+          </div>
+
+          <p className="text-[23px] mt-5 font-bold cursor-pointer">
             {headLine}
           </p>
           <p className="mt-2 cursor-pointer">{truncatedDescription}</p>

@@ -6,7 +6,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const MatchSlider = ({ liveMatches }) => {
   const [sliderPosition, setSliderPosition] = useState(0);
   const totalMatches = liveMatches?.length;
-  console.log(totalMatches);
 
   const handlePrevClick = () => {
     setSliderPosition((prevPosition) => Math.max(prevPosition - 3, 0));
@@ -18,9 +17,12 @@ const MatchSlider = ({ liveMatches }) => {
     }
   };
 
+  const canShowNext = sliderPosition + 3 < totalMatches;
+  const canShowPrev = sliderPosition - 3 >= 0;
+
   return (
     <>
-      {!totalMatches && (
+      {totalMatches && (
         <div className="flex flex-col justify-center mx-5 lg:mx-[350px]">
           <p className="my-6 dark:text-tertiary text-[20px] font-medium text-left ml-[45px]">
             Matches For you
@@ -29,8 +31,10 @@ const MatchSlider = ({ liveMatches }) => {
             <FaChevronLeft
               size={25}
               color="#4B4B4B"
-              className="cursor-pointer "
-              onClick={handlePrevClick}
+              className={`cursor-pointer ${
+                canShowPrev ? "" : "opacity-50 pointer-events-none"
+              }`}
+              onClick={canShowPrev ? handlePrevClick : undefined}
             />
             <div className="grid grid-cols-3 gap-x-5">
               {liveMatches
@@ -42,8 +46,10 @@ const MatchSlider = ({ liveMatches }) => {
             <FaChevronRight
               size={25}
               color="#4B4B4B"
-              className="cursor-pointer"
-              onClick={handleNextClick}
+              className={`cursor-pointer ${
+                canShowNext ? "" : "opacity-50 pointer-events-none"
+              }`}
+              onClick={canShowNext ? handleNextClick : undefined}
             />
           </div>
         </div>

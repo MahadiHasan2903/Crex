@@ -10,12 +10,13 @@ const getImage = async (imageId) => {
   console.log("Get Image:", imageId);
   const response = await fetchTyped(`${base_url}/img/v1/i1/c${imageId}/i.jpg`, {
     method: "GET",
-    next: { revalidate: 5 },
     headers: {
       "X-RapidAPI-Key": `${X_RapidAPI_Key}`,
       "X-RapidAPI-Host": `${X_RapidAPI_Host}`,
     },
   });
+  console.log("Image Response:", response);
+  return response;
 };
 
 const images = {

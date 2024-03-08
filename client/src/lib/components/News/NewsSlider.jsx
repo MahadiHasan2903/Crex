@@ -4,9 +4,6 @@ import NewsCard from "./NewsCard";
 import { dummyNews } from "@/lib/utils/data";
 
 const NewsSlider = ({ allNews }) => {
-  const totalMatches = dummyNews.length;
-  console.log(totalMatches);
-
   return (
     <div className="flex flex-col justify-center mx-[395px] mt-10">
       <div>

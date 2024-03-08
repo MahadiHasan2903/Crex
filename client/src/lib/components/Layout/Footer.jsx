@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="py-4 mt-3  bg-[#131E29] px-[400px]">
+    <div className="py-4 mt-3  bg-[#131E29] px-[400px] hidden md:block">
       <div className="flex items-center w-full py-5 font-medium border-b border-white mb-7 border-opacity-10 gap-x-3">
         <Image src={logo} alt="logo" width={30} height={30} />
         <p className="text-tertiary  text-[18px] font-medium">CREX</p>
