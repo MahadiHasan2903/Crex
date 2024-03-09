@@ -1,45 +1,62 @@
+"use client";
 import React from "react";
-import MatchFixtureCard from "@/lib/components/Fixtures/MatchFixtureCard";
+import MatchFixtureCard from "@/lib/components/Fixtures/FixtureMatchList/MatchFixtureCard";
 import { matchList } from "@/lib/utils/data";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { FaAngleDoubleLeft } from "react-icons/fa";
-import { FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
 const FixtureMatchList = ({
-  selectedTeams,
   selectedFormat,
   selectedSeries,
+  selectedTeams,
+  removeSelectedFormat,
+  removeSelectedSeries,
+  removeSelectedTeam,
 }) => {
-  console.log("Selected Format:", selectedFormat);
-  console.log("Selected Series:", selectedSeries);
-  console.log("Selected Teams:", selectedTeams);
+  const handleRemoveTeam = (team) => {
+    removeSelectedTeam(team);
+  };
 
   return (
     <div className="p-5 w-[70%] border-r border-black border-opacity-5 dark:border-primary">
       <div className="flex items-center justify-between">
-        <div className="flex items-center ml-10 gap-x-3">
-          <div className="flex items-center px-2 py-1 border rounded-md enter gap-x-2">
-            <p>Bangladesh</p>
-            <RxCross2 />
-          </div>
-          <div className="flex items-center px-2 py-1 border rounded-md enter gap-x-2">
-            <p>Bangladesh</p>
-            <RxCross2 />
-          </div>
-          <div className="flex items-center px-2 py-1 border rounded-md enter gap-x-2">
-            <p>Bangladesh</p>
-            <RxCross2 />
-          </div>
-          <div className="flex items-center px-2 py-1 border rounded-md enter gap-x-2">
-            <p>Bangladesh</p>
-            <RxCross2 />
-          </div>
-          <div className="flex items-center px-2 py-1 border rounded-md enter gap-x-2">
-            <p>Bangladesh</p>
-            <RxCross2 />
-          </div>
+        <div className="flex flex-wrap items-center ml-10 gap-x-3">
+          {selectedTeams.map((team, index) => (
+            <div
+              key={index}
+              className="flex items-center px-2 py-1 mb-2 border rounded-md cursor-pointer enter gap-x-2"
+            >
+              <p>{team}</p>
+              <RxCross2
+                size={20}
+                className="cursor-pointer hover:text-red-500"
+                onClick={() => handleRemoveTeam(team)}
+              />
+            </div>
+          ))}
+          {selectedSeries && (
+            <div className="flex items-center px-2 py-1 mb-2 border rounded-md enter gap-x-2">
+              <p>{selectedSeries}</p>
+              <RxCross2
+                size={20}
+                className="cursor-pointer hover:text-red-500"
+                onClick={removeSelectedSeries}
+              />
+            </div>
+          )}
+          {selectedFormat && (
+            <div className="flex items-center px-2 py-1 mb-2 border rounded-md cursor-pointer enter gap-x-2">
+              <p>{selectedFormat}</p>
+              <RxCross2
+                size={20}
+                className="cursor-pointer hover:text-red-500"
+                onClick={removeSelectedFormat}
+              />
+            </div>
+          )}
         </div>
+
         <div className="flex items-center gap-x-3">
           <FaChevronLeft
             size={24}

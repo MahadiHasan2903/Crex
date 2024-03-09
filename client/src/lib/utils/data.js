@@ -197,16 +197,13 @@ export const cricketTeams = [
 ];
 
 export const cricketFormats = [
-  { name: "All Formats" },
   { name: "ODI" },
   { name: "T20" },
   { name: "Test" },
   { name: "T10" },
-  { name: "100B" },
 ];
 
 export const cricketSeries = [
-  { name: "All Series" },
   { name: "International" },
   { name: "Domestic" },
   { name: "League" },

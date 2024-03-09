@@ -4,9 +4,9 @@ import { MdExpandMore } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { cricketSeries } from "@/lib/utils/data";
 
-const FixtureSeriesFilter = () => {
+const FixtureSeriesFilter = ({ selectedSeries, onSeriesSelection }) => {
   const [isSeriesFilterOpen, setIsSeriesFilterOpen] = useState(false);
-  const [selectedSeries, setSelectedSeries] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);
 
   useEffect(() => {
@@ -28,10 +28,13 @@ const FixtureSeriesFilter = () => {
   };
 
   const handleSeriesSelection = (seriesName) => {
-    // console.log("Series format:", seriesName);
-    setSelectedSeries(seriesName);
+    onSeriesSelection(seriesName);
     setIsSeriesFilterOpen(false);
   };
+
+  const filteredSeries = cricketSeries.filter((series) =>
+    series.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="py-2 " ref={filterRef}>
@@ -53,17 +56,23 @@ const FixtureSeriesFilter = () => {
                 type="text"
                 placeholder="Search Series"
                 className="bg-transparent text-[13px] w-full outline-none"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            {cricketSeries.map((series, index) => (
-              <div
-                key={index}
-                className="flex items-center px-3 py-2 gap-x-2"
-                onClick={() => handleSeriesSelection(series.name)}
-              >
-                <p>{series.name}</p>
-              </div>
-            ))}
+            {filteredSeries.length === 0 ? (
+              <p className="text-[13px] text-gray-500">No match found</p>
+            ) : (
+              filteredSeries.map((series, index) => (
+                <div
+                  key={index}
+                  className="flex items-center cursor-pointer hover:bg-[#FF7575] px-3 py-2 gap-x-2"
+                  onClick={() => handleSeriesSelection(series.name)}
+                >
+                  <p>{series.name}</p>
+                </div>
+              ))
+            )}
           </div>
         )}
       </div>

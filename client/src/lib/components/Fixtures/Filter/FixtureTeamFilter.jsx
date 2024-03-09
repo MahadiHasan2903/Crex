@@ -4,11 +4,28 @@ import { MdExpandMore } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { cricketTeams } from "@/lib/utils/data";
 
-const FixtureTeamFilter = () => {
+const FixtureTeamFilter = ({ selectedTeams, onTeamSelection }) => {
   const [isTeamFilterOpen, setIsTeamFilterOpen] = useState(false);
-  const [selectedTeams, setSelectedTeams] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);
 
+  const toggleTeamFilter = () => {
+    setIsTeamFilterOpen((prev) => !prev);
+  };
+
+  const handleCheckboxChange = (teamName) => {
+    if (selectedTeams.includes(teamName)) {
+      onTeamSelection(
+        selectedTeams.filter((selectedTeam) => selectedTeam !== teamName)
+      );
+    } else {
+      onTeamSelection([...selectedTeams, teamName]);
+    }
+  };
+
+  const filteredTeams = cricketTeams.filter((team) =>
+    team.Name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (filterRef.current && !filterRef.current.contains(event.target)) {
@@ -22,23 +39,6 @@ const FixtureTeamFilter = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [filterRef]);
-
-  const toggleTeamFilter = () => {
-    setIsTeamFilterOpen((prev) => !prev);
-  };
-
-  const handleCheckboxChange = (teamName) => {
-    // console.log("Team format:", teamName);
-
-    if (selectedTeams.includes(teamName)) {
-      setSelectedTeams((prevTeams) =>
-        prevTeams.filter((selectedTeam) => selectedTeam !== teamName)
-      );
-    } else {
-      setSelectedTeams((prevTeams) => [...prevTeams, teamName]);
-    }
-  };
-
   return (
     <div className="py-2" ref={filterRef}>
       <p className="pb-2 text-[15px]">Team</p>
@@ -63,14 +63,17 @@ const FixtureTeamFilter = () => {
                 type="text"
                 placeholder="Search Teams"
                 className="bg-transparent text-[13px] w-full outline-none"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            {cricketTeams.map((team, index) =>
-              // Exclude "All Teams" from rendering
-              team.Name !== "All Teams" ? (
+            {filteredTeams.length === 0 ? (
+              <p className="text-[13px] text-gray-500">No match found</p>
+            ) : (
+              filteredTeams.map((team, index) => (
                 <div
                   key={index}
-                  className="flex items-center px-3 py-2 gap-x-2"
+                  className="flex items-center hover:bg-[#FF7575] px-3 py-2 gap-x-2"
                 >
                   <input
                     type="checkbox"
@@ -79,17 +82,16 @@ const FixtureTeamFilter = () => {
                     value={team.Name}
                     checked={selectedTeams.includes(team.Name)}
                     onChange={() => handleCheckboxChange(team.Name)}
+                    className="cursor-pointer"
                   />
-                  <label htmlFor={`teamSubName${index}`}>{team.Name}</label>
+                  <label
+                    className="cursor-pointer"
+                    htmlFor={`teamSubName${index}`}
+                  >
+                    {team.Name}
+                  </label>
                 </div>
-              ) : (
-                <div
-                  key={index}
-                  className="flex items-center px-3 py-2 gap-x-2"
-                >
-                  <p>{team.Name}</p>
-                </div>
-              )
+              ))
             )}
           </div>
         )}
