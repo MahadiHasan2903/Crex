@@ -79,6 +79,8 @@ const getLiveMatches = async () => {
     };
   });
 
+  console.log(filteredLiveMatches);
+
   return filteredLiveMatches;
 };
 

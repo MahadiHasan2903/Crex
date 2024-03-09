@@ -18,6 +18,8 @@ const getInternationalSeries = async () => {
       },
     });
 
+    console.log(response);
+
     const formattedInternationalSeries = response.seriesMapProto?.flatMap(
       (month) =>
         month.series?.map((series) => ({

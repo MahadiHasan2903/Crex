@@ -1,22 +1,26 @@
 "use client";
 import React from "react";
-import { Link, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { fixtureLinks } from "@/lib/utils/data";
+import Link from "next/link";
 
 const FeatureTopBar = () => {
-  const { pathname } = usePathname();
+  const pathname = usePathname();
+
   return (
-    <div className="w-full bg-[#122638] py-2">
-      <div className="px-[200px] flex items-center gap-x-5">
-        {fixtureLinks.map((index, l) => (
-          <Link key={index} href={l.href}>
-            <p
-              className={`active:${
-                pathname === l.href ? "[#CFD1D3]" : "[#CFD1D399]"
-              } text-[#CFD1D399]`}
-            >
-              {l.label}
-            </p>
+    <div className="w-full bg-[#0E1720] relative py-4">
+      <div className="px-[200px] flex items-center  gap-x-5">
+        {fixtureLinks.map((l, index) => (
+          <Link
+            key={index}
+            href={l.to}
+            className={`font-bold text-[14px] pb-[5px] ${
+              pathname === l.to
+                ? "text-[#CFD1D3]  border-b-2 border-[#FF7575]"
+                : "text-[#CFD1D399]"
+            }`}
+          >
+            {l.label}
           </Link>
         ))}
       </div>

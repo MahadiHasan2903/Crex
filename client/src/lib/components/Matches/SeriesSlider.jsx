@@ -28,7 +28,7 @@ const SeriesSlider = ({ allSeries }) => {
 
   return (
     <>
-      <div className="absolute z-[999999] popup  bg-primary w-full h-[250px] border-t border-secondary border-opacity-50">
+      <div className="absolute z-[999] popup  bg-primary w-full h-[250px] border-t border-secondary border-opacity-50">
         {totalSeries ? (
           <div className="flex items-center justify-center gap-x-5 ">
             <FaChevronLeft
@@ -70,7 +70,7 @@ const SeriesSlider = ({ allSeries }) => {
           </div>
         ) : (
           <div className="flex items-center justify-center mt-[100px]">
-            <p className="text-[30px] font-bold">
+            <p className="text-[30px] font-bold text-white">
               Currently no series is going on.
             </p>
           </div>

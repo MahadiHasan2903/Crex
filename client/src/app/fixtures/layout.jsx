@@ -1,11 +1,13 @@
 import React from "react";
 import FeatureTopBar from "@/lib/components/Layout/FeatureTopBar";
 
-export default async function FixtureLayout({ children }) {
+const Layout = ({ children }) => {
   return (
     <div>
-      {/* <FeatureTopBar /> */}
-      {children}
+      <FeatureTopBar />
+      <div>{children}</div>
     </div>
   );
-}
+};
+
+export default Layout;
