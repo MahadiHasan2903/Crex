@@ -567,3 +567,111 @@ export const australianCricketTeam = [
     playerType: "Bench",
   },
 ];
+
+export const battingData = [
+  {
+    player: "Mustafizur Rahman",
+    battingStatus: "c Shaheen",
+    runs: 53,
+    balls: 26,
+    fours: 2,
+    sixes: 5,
+    strikeRate: 169,
+  },
+  {
+    player: "Tamim Iqbal",
+    battingStatus: "b Rauf",
+    runs: 42,
+    balls: 30,
+    fours: 3,
+    sixes: 1,
+    strikeRate: 140,
+  },
+  {
+    player: "Shakib Al Hasan (C)",
+    battingStatus: "b Hasan c Babar",
+    runs: 65,
+    balls: 40,
+    fours: 4,
+    sixes: 3,
+    strikeRate: 162.5,
+  },
+  {
+    player: "Mushfiqur Rahim(WK)",
+    battingStatus: "ran out Ali",
+    runs: 28,
+    balls: 20,
+    fours: 1,
+    sixes: 0,
+    strikeRate: 140,
+  },
+  {
+    player: "Mahmudullah",
+    battingStatus: "Not Out",
+    runs: 36,
+    balls: 25,
+    fours: 2,
+    sixes: 2,
+    strikeRate: 144,
+  },
+  {
+    player: "Soumya Sarkar",
+    battingStatus: "Not Out",
+    runs: 18,
+    balls: 15,
+    fours: 1,
+    sixes: 0,
+    strikeRate: 120,
+  },
+];
+
+export const bowlingData = [
+  {
+    player: "Mustafizur Rahman",
+    overs: 4,
+    maiden: 1,
+    runs: 25,
+    wickets: 2,
+    economyRate: 6.25,
+  },
+  {
+    player: "Shakib Al Hasan",
+    overs: 3,
+    maiden: 0,
+    runs: 15,
+    wickets: 1,
+    economyRate: 5,
+  },
+  {
+    player: "Taskin Ahmed",
+    overs: 4,
+    maiden: 0,
+    runs: 30,
+    wickets: 1,
+    economyRate: 7.5,
+  },
+  {
+    player: "Mehidy Hasan",
+    overs: 3,
+    maiden: 0,
+    runs: 20,
+    wickets: 0,
+    economyRate: 6.67,
+  },
+  {
+    player: "Mohammad Saifuddin",
+    overs: 4,
+    maiden: 0,
+    runs: 40,
+    wickets: 1,
+    economyRate: 10,
+  },
+];
+
+export const fallOfWicketsData = [
+  { batsman: "Tamim Iqbal", score: "25-1", over: "5.2" },
+  { batsman: "Soumya Sarkar", score: "40-2", over: "8.1" },
+  { batsman: "Liton Das", score: "55-3", over: "11.4" },
+  { batsman: "Mushfiqur Rahim", score: "65-4", over: "13.3" },
+  { batsman: "Mahmudullah", score: "80-5", over: "16.5" },
+];

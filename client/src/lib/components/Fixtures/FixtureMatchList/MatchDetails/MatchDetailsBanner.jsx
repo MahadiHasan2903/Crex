@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import React from "react";
 import MatchInfo from "./MatchInfo/MatchInfo";
-import LiveMatch from "./LiveMatch";
-import MatchScorecard from "./MatchScorecard";
+import LiveMatch from "./Live/LiveMatch";
+import MatchScoreCard from "./MatchScoreCard/MatchScorecard";
 
 const MatchDetailsBanner = () => {
   const [activeTab, setActiveTab] = useState("MatchInfo");
@@ -80,7 +80,7 @@ const MatchDetailsBanner = () => {
       </div>
       {activeTab === "MatchInfo" && <MatchInfo />}
       {activeTab === "Live" && <LiveMatch />}
-      {activeTab === "Scorecard" && <MatchScorecard />}
+      {activeTab === "Scorecard" && <MatchScoreCard />}
     </div>
   );
 };
