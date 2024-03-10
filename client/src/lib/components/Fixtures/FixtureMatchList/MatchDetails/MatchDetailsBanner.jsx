@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import React from "react";
-import MatchInfo from "./MatchInfo";
+import MatchInfo from "./MatchInfo/MatchInfo";
 import LiveMatch from "./LiveMatch";
 import MatchScorecard from "./MatchScorecard";
 

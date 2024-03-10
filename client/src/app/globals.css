@@ -9,6 +9,6 @@ input::-webkit-inner-spin-button {
 
 @layer base {
   body {
-    @apply dark:bg-[#0C131A] bg-[#F5F5F5];
+    @apply dark:bg-[#0C131A] bg-white;
   }
 }

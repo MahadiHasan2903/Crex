@@ -4,7 +4,11 @@ import React from "react";
 import { MdChevronRight } from "react-icons/md";
 import { BiCalendarEvent } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
-import TeamResultInfo from "@/lib/components/atoms/TeamResultInfo";
+import TeamForm from "./TeamForm";
+import HeadToHead from "./HeadToHead";
+import TeamComparison from "./TeamComparison";
+import VenueDetails from "./VenueDetails/VenueDetails";
+import MatchUmpireInfo from "./MatchUmpireInfo";
 
 const MatchInfo = () => {
   return (
@@ -40,17 +44,13 @@ const MatchInfo = () => {
             </div>
           </div>
 
-          <div className="mt-[80px] text-black dark:text-[#CFD1D3] ">
-            <p className="text-[18px] font-medium mt-8 mb-4">
-              Team Form
-              <span className="text-[14px] pl-2  opacity-70 font-normal">
-                (Last 5 matches)
-              </span>
-            </p>
-            <TeamResultInfo teamName="Bangladesh" />
-            <TeamResultInfo teamName="Australia" />
-          </div>
+          <TeamForm />
+          <HeadToHead />
+          <TeamComparison />
+          <VenueDetails />
+          <MatchUmpireInfo />
         </div>
+
         <div>right</div>
       </div>
     </div>

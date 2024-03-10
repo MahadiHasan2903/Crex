@@ -4,7 +4,7 @@ import { GiCricketBat } from "react-icons/gi";
 
 const MobileFooter = () => {
   return (
-    <div className="lg:hidden flex  bottom-0 items-center   gap-x-12 pl-12 w-full py-2 bg-white dark:bg-[#131E29] text-[12px]">
+    <div className="lg:hidden flex  bottom-0 items-center   gap-x-12 pl-12 w-full py-2 bg-[#F5F5F5] dark:bg-[#131E29] text-[12px]">
       <p>Fixtures</p>
       <p className="flex items-center gap-x-2">
         <GiCricketBat color="#F3AD61" /> Stats Corner
