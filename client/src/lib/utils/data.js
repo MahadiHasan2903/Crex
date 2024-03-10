@@ -421,3 +421,149 @@ export const teamFormData = [
     tournament: "Championship Cup 2024",
   },
 ];
+
+export const bangladeshCricketTeam = [
+  {
+    playerName: "T Iqbal",
+    playerRole: "Opening Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "L Das (WK)",
+    playerRole: "Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "S A Hasan (C)",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Rahim (WK)",
+    playerRole: "Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Riyad",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Hasan",
+    playerRole: "Spinner",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Rahman",
+    playerRole: "Fast Bowler",
+    playerType: "Playing",
+  },
+  {
+    playerName: "T Ahmed",
+    playerRole: "Fast Bowler",
+    playerType: "Playing",
+  },
+  {
+    playerName: "S Sarkar",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Hossain",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "A Hossain",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "N H Shanto",
+    playerRole: "Batsman",
+    playerType: "Bench",
+  },
+  {
+    playerName: "M Saifuddin",
+    playerRole: "All-Rounder",
+    playerType: "Bench",
+  },
+  {
+    playerName: "R Hossain",
+    playerRole: "Fast Bowler",
+    playerType: "Bench",
+  },
+];
+
+export const australianCricketTeam = [
+  {
+    playerName: "D Warner",
+    playerRole: "Opening Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "A Finch (C)",
+    playerRole: "Opening Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "S Smith",
+    playerRole: "Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "G Maxwell",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Stoinis",
+    playerRole: "All-Rounder",
+    playerType: "Playing",
+  },
+  {
+    playerName: "A Carey (WK)",
+    playerRole: "Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "P Cummins",
+    playerRole: "Fast Bowler",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Starc",
+    playerRole: "Fast Bowler",
+    playerType: "Playing",
+  },
+  {
+    playerName: "A Zampa",
+    playerRole: "Spinner",
+    playerType: "Playing",
+  },
+  {
+    playerName: "J Hazlewood",
+    playerRole: "Fast Bowler",
+    playerType: "Playing",
+  },
+  {
+    playerName: "M Wade (WK)",
+    playerRole: "Batsman",
+    playerType: "Playing",
+  },
+  {
+    playerName: "Labuschagne",
+    playerRole: "Batsman",
+    playerType: "Bench",
+  },
+  {
+    playerName: "A Agar",
+    playerRole: "All-Rounder",
+    playerType: "Bench",
+  },
+  {
+    playerName: "C Green",
+    playerRole: "All-Rounder",
+    playerType: "Bench",
+  },
+];
