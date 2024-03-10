@@ -1,7 +1,8 @@
 import React from "react";
+import FixtureSeries from "@/lib/components/Fixtures/FixtureSeriesList/FixtureSeries";
 
 const FixturesSeriesListPage = () => {
-  return <div>FixturesSeriesListPage</div>;
+  return <FixtureSeries />;
 };
 
 export default FixturesSeriesListPage;

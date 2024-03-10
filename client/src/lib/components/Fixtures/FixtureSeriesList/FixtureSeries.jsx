@@ -1,14 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import FixtureSeriesList from "./FixtureSeriesList";
 import GenericFilter from "../Filter/GenericFilter";
-import FixtureMatchList from "./FixtureMatchList";
 import { cricketFormats, cricketSeries } from "@/lib/utils/data";
-import FixtureTeamFilter from "../Filter/FixtureTeamFilter";
 
-const FixtureMatches = () => {
+const FixtureSeries = () => {
   const [selectedFormat, setSelectedFormat] = useState(null);
   const [selectedSeries, setSelectedSeries] = useState(null);
-  const [selectedTeams, setSelectedTeams] = useState([]);
 
   const handleFormatSelection = (formatName) => {
     setSelectedFormat(formatName);
@@ -16,10 +14,6 @@ const FixtureMatches = () => {
 
   const handleSeriesSelection = (seriesName) => {
     setSelectedSeries(seriesName);
-  };
-
-  const handleTeamSelection = (selectedTeams) => {
-    setSelectedTeams(selectedTeams);
   };
 
   const removeSelectedFormat = () => {
@@ -30,27 +24,17 @@ const FixtureMatches = () => {
     setSelectedSeries(null);
   };
 
-  const removeSelectedTeam = (teamToRemove) => {
-    const updatedTeams = selectedTeams.filter((team) => team !== teamToRemove);
-    setSelectedTeams(updatedTeams);
-  };
-
   return (
     <div className="flex px-[200px] mt-10">
-      <FixtureMatchList
+      <FixtureSeriesList
         selectedFormat={selectedFormat}
         selectedSeries={selectedSeries}
-        selectedTeams={selectedTeams}
         removeSelectedFormat={removeSelectedFormat}
         removeSelectedSeries={removeSelectedSeries}
-        removeSelectedTeam={removeSelectedTeam}
       />
       <div className="flex flex-col pl-10 ">
         <p className="mb-5 font-medium">Filter Fixtures</p>
-        <FixtureTeamFilter
-          selectedTeams={selectedTeams}
-          onTeamSelection={handleTeamSelection}
-        />
+
         <GenericFilter
           optionsArray={cricketFormats}
           selectedValue={selectedFormat}
@@ -68,4 +52,4 @@ const FixtureMatches = () => {
   );
 };
 
-export default FixtureMatches;
+export default FixtureSeries;

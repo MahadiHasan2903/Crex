@@ -5,7 +5,7 @@ import coverImage from "../../../public/cover.png";
 export const menuItems = [
   { label: "Home", href: "/" },
   { label: "Series", href: "#series", icon: <MdOutlineExpandMore /> },
-  { label: "Fixtures", href: "/fixtures/match-list" },
+  { label: "Fixtures", href: "/fixtures" },
   {
     label: "States Corner",
     href: "/states",
@@ -70,6 +70,7 @@ export const matchList = [
     date: "Sat, 9 Mar 2024",
     matches: [
       {
+        matchId: 1,
         matchInfo: "7th T20",
         seriesName: "Malaysia T20 2024",
         matchStatus: "MLY Won",
@@ -91,6 +92,7 @@ export const matchList = [
         },
       },
       {
+        matchId: 2,
         matchInfo: "8th T20",
         seriesName: "Malaysia T20 2024",
         matchStatus: "Draw",
@@ -117,6 +119,7 @@ export const matchList = [
     date: "Sun, 10 Mar 2024",
     matches: [
       {
+        matchId: 3,
         matchInfo: "9th T20",
         seriesName: "Malaysia T20 2024",
         matchStatus: "IND Won",
@@ -138,6 +141,7 @@ export const matchList = [
         },
       },
       {
+        matchId: 4,
         matchInfo: "10th T20",
         seriesName: "Malaysia T20 2024",
         matchStatus: "In Progress",
@@ -207,4 +211,115 @@ export const cricketSeries = [
   { name: "International" },
   { name: "Domestic" },
   { name: "League" },
+];
+
+export const seriesArray = [
+  {
+    id: 6927,
+    name: "England tour of India, 2024",
+    startDt: "1706140800000",
+    endDt: "1710115200000",
+  },
+  {
+    id: 6928,
+    name: "Australia tour of South Africa, 2024",
+    startDt: "1722960000000",
+    endDt: "1726934400000",
+  },
+  {
+    id: 6929,
+    name: "New Zealand tour of West Indies, 2024",
+    startDt: "1730361600000",
+    endDt: "1734336000000",
+  },
+  {
+    id: 6930,
+    name: "Pakistan tour of Bangladesh, 2024",
+    startDt: "1737772800000",
+    endDt: "1741747200000",
+  },
+  {
+    id: 6931,
+    name: "India tour of Australia, 2024",
+    startDt: "1745184000000",
+    endDt: "1749158400000",
+  },
+  {
+    id: 6932,
+    name: "South Africa tour of England, 2024",
+    startDt: "1752595200000",
+    endDt: "1756569600000",
+  },
+  {
+    id: 6933,
+    name: "West Indies tour of New Zealand, 2024",
+    startDt: "1760006400000",
+    endDt: "1763980800000",
+  },
+  {
+    id: 6934,
+    name: "Bangladesh tour of Pakistan, 2024",
+    startDt: "1767417600000",
+    endDt: "1771392000000",
+  },
+  {
+    id: 6935,
+    name: "England tour of India, 2024",
+    startDt: "1774828800000",
+    endDt: "1778803200000",
+  },
+  {
+    id: 6936,
+    name: "Australia tour of South Africa, 2024",
+    startDt: "1782240000000",
+    endDt: "1786214400000",
+  },
+  {
+    id: 6937,
+    name: "New Zealand tour of West Indies, 2024",
+    startDt: "1789651200000",
+    endDt: "1793625600000",
+  },
+  {
+    id: 6938,
+    name: "Pakistan tour of Bangladesh, 2024",
+    startDt: "1797062400000",
+    endDt: "1801036800000",
+  },
+  {
+    id: 6939,
+    name: "India tour of Australia, 2024",
+    startDt: "1804492800000",
+    endDt: "1808467200000",
+  },
+  {
+    id: 6940,
+    name: "South Africa tour of England, 2024",
+    startDt: "1811875200000",
+    endDt: "1815849600000",
+  },
+  {
+    id: 6941,
+    name: "West Indies tour of New Zealand, 2024",
+    startDt: "1819286400000",
+    endDt: "1823260800000",
+  },
+  {
+    id: 6942,
+    name: "Bangladesh tour of Pakistan, 2024",
+    startDt: "1826697600000",
+    endDt: "1830672000000",
+  },
+  {
+    id: 6943,
+    name: "England tour of India, 2024",
+    startDt: "1834108800000",
+    endDt: "1838083200000",
+  },
+  {
+    id: 6944,
+    name: "Australia tour of South Africa, 2024",
+    startDt: "1841520000000",
+    endDt: "1845494400000",
+  },
 ];

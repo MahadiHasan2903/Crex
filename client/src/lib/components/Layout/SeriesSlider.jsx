@@ -6,7 +6,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const SeriesSlider = ({ allSeries }) => {
   const [sliderPosition, setSliderPosition] = useState(0);
-  const itemsToShow = 6;
+  const itemsToShow = 5;
 
   const handlePrevClick = () => {
     const newPosition = Math.max(sliderPosition - itemsToShow, 0);
@@ -26,11 +26,13 @@ const SeriesSlider = ({ allSeries }) => {
   const canShowNext = sliderPosition + itemsToShow < totalSeries;
   const canShowPrev = sliderPosition - itemsToShow >= 0;
 
+  console.log("allSeries:", allSeries);
+
   return (
     <>
       <div className="absolute z-[999] popup  bg-primary w-full h-[250px] border-t border-secondary border-opacity-50">
         {totalSeries ? (
-          <div className="flex items-center justify-center gap-x-5 ">
+          <div className="flex items-center justify-center pt-5 gap-x-5 ">
             <FaChevronLeft
               size={25}
               color="#4B4B4B"
@@ -53,7 +55,7 @@ const SeriesSlider = ({ allSeries }) => {
                       width={100}
                       height={120}
                     />
-                    <p className="text-[#FAFAFA] text-[16px] mt-3 font-medium">
+                    <p className="text-[#FAFAFA] text-[14px] mt-3 font-medium">
                       {series.name}
                     </p>
                   </div>

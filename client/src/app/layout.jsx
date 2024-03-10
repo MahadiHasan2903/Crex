@@ -18,23 +18,23 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const allInternationalSeries = await api.series.getInternationalSeries();
-  const allLeagueSeries = await api.series.getLeagueSeries();
-  const allWomenSeries = await api.series.getWomenSeries();
+  // const allLeagueSeries = await api.series.getLeagueSeries();
+  // const allWomenSeries = await api.series.getWomenSeries();
 
-  // Combine the series data from all three calls
-  const allSeries = allInternationalSeries?.concat(
-    allLeagueSeries,
-    allWomenSeries
-  );
+  // // Combine the series data from all three calls
+  // const allSeries = allInternationalSeries?.concat(
+  //   allLeagueSeries,
+  //   allWomenSeries
+  // );
 
-  // Now allSeries contains the combined series data
-  console.log("allSeries", allSeries);
+  // // Now allSeries contains the combined series data
+  // console.log("allSeries", allSeries);
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <AuthProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
-            <Header allSeries={allSeries} />
+            <Header allSeries={allInternationalSeries} />
             {children}
             <Footer />
             <MobileFooter />

@@ -6,7 +6,7 @@ import logo from "../../../../public/logo.webp";
 import { usePathname } from "next/navigation";
 import { menuItems } from "@/lib/utils/data";
 import ThemeToggler from "@/lib/theme/ThemeToggler";
-import SeriesSlider from "../Matches/SeriesSlider";
+import SeriesSlider from "./SeriesSlider";
 
 const Header = ({ allSeries }) => {
   const pathName = usePathname();

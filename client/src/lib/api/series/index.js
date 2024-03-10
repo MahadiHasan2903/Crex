@@ -18,8 +18,6 @@ const getInternationalSeries = async () => {
       },
     });
 
-    console.log(response);
-
     const formattedInternationalSeries = response.seriesMapProto?.flatMap(
       (month) =>
         month.series?.map((series) => ({
@@ -28,7 +26,6 @@ const getInternationalSeries = async () => {
         }))
     );
 
-    console.log("formattedInternationalSeries", formattedInternationalSeries);
     return formattedInternationalSeries;
   } catch (error) {
     console.error("Error fetching international series:", error);
@@ -55,7 +52,6 @@ const getLeagueSeries = async () => {
       }))
     );
 
-    console.log("formattedLeagueSeries", formattedLeagueSeries);
     return formattedLeagueSeries;
   } catch (error) {
     console.error("Error fetching League series:", error);
@@ -82,7 +78,6 @@ const getWomenSeries = async () => {
       }))
     );
 
-    console.log("formattedWomenSeries", formattedWomenSeries);
     return formattedWomenSeries;
   } catch (error) {
     console.error("Error fetching Women series:", error);
