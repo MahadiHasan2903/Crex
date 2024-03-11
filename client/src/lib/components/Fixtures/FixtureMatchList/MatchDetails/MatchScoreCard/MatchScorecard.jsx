@@ -5,6 +5,7 @@ import BattingScore from "./BattingScore";
 import BowlingScore from "./BowlingScore";
 import FallOfWickets from "./FallOfWickets";
 import PartnershipScore from "./PartnershipScore";
+import { bangladeshCricketTeam } from "@/lib/utils/data";
 
 const MatchScoreCard = () => {
   const [activeButton, setActiveButton] = useState("BD");
@@ -54,7 +55,7 @@ const MatchScoreCard = () => {
                 <BattingScore />
                 <BowlingScore />
                 <FallOfWickets />
-                {/*  <PartnershipScore /> */}
+                <PartnershipScore />
               </>
             )}
             {activeButton === "IND" && (
@@ -62,12 +63,50 @@ const MatchScoreCard = () => {
                 <BattingScore />
                 <BowlingScore />
                 <FallOfWickets />
-                {/*   <PartnershipScore /> */}
+                <PartnershipScore />
               </>
             )}
           </div>
         </div>
-        <div>Right</div>
+        <div>
+          <div className="flex flex-col items-start m-5 dark:text-[#9FA3A7] text-black">
+            <p className="text-[18px] my-4 ml-5">Yet to Bat</p>
+
+            <div className="grid grid-cols-2">
+              {bangladeshCricketTeam.slice(0, 3).map((player, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-between w-full"
+                >
+                  <div className="flex items-center m-5 gap-x-3">
+                    <div className="relative">
+                      <Image
+                        src="/player.png"
+                        width={36}
+                        height={20}
+                        className="-mb-2.5"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={36}
+                        height={20}
+                        className="z-[9994]"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[14px] text-[#CFD1D3]">
+                        {player.playerName}
+                      </p>
+                      <p className="text-[12px] text-[#9FA3A7]">
+                        {player.playerRole}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

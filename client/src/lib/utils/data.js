@@ -675,3 +675,67 @@ export const fallOfWicketsData = [
   { batsman: "Mushfiqur Rahim", score: "65-4", over: "13.3" },
   { batsman: "Mahmudullah", score: "80-5", over: "16.5" },
 ];
+
+export const partnerships = [
+  {
+    batter1: {
+      name: "Morne van Wyk",
+      runs: "1",
+      balls: "1",
+    },
+    batter2: {
+      name: "Abdul",
+      runs: "4",
+      balls: "4",
+    },
+  },
+  {
+    batter1: {
+      name: "Player 2",
+      runs: "10",
+      balls: "15",
+    },
+    batter2: {
+      name: "Player 3",
+      runs: "20",
+      balls: "25",
+    },
+  },
+  {
+    batter1: {
+      name: "Player 4",
+      runs: "30",
+      balls: "25",
+    },
+    batter2: {
+      name: "Player 5",
+      runs: "15",
+      balls: "10",
+    },
+  },
+  {
+    batter1: {
+      name: "Player 6",
+      runs: "5",
+      balls: "8",
+    },
+    batter2: {
+      name: "Player 7",
+      runs: "12",
+      balls: "18",
+    },
+  },
+  {
+    batter1: {
+      name: "Player 8",
+      runs: "8",
+      balls: "12",
+    },
+    batter2: {
+      name: "Player 9",
+      runs: "12",
+      balls: "15",
+    },
+  },
+  // Add more partnership data objects as needed
+];
