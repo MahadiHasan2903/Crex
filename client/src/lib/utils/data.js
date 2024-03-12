@@ -739,3 +739,47 @@ export const partnerships = [
   },
   // Add more partnership data objects as needed
 ];
+
+export const cricketPlayers = [
+  {
+    name: "C White",
+    runs: 10,
+    ballPlayed: 6,
+    wicket: "c N Deonarine b A Gunaratne",
+    fours: 2,
+    sixes: 0,
+    SR: 33.33,
+  },
+  {
+    name: "B Smith",
+    runs: 25,
+    ballPlayed: 18,
+    wicket: "b M Johnson",
+    fours: 3,
+    sixes: 1,
+    SR: 138.89,
+  },
+];
+
+export const players = [
+  {
+    name: "C White",
+    age: "35 years",
+    best: "159*",
+    playerType: "Batsman",
+    matches: 12,
+    runs: 625,
+    avg: 45,
+    SR: 89.33,
+  },
+  {
+    name: "A Johnson",
+    age: "28 years",
+    best: "5/20",
+    playerType: "Bowler",
+    matches: 15,
+    wickets: 82,
+    avg: 18.5,
+    Econ: 6.75,
+  },
+];
