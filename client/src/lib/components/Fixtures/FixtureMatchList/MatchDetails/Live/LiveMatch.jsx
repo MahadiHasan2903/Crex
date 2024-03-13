@@ -111,7 +111,7 @@ const LiveMatch = () => {
                 </div>
               </div>
               <div className="flex items-center my-7 gap-x-5">
-                <p className="pb-5 text-[16px] font-medium">14.5</p>
+                <p className="pb-5 text-[16px] font-medium">14.4</p>
                 <div className="flex items-center w-full pb-5 border-b gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5">
                   <p className="w-[25px] bg-yellow-600 text-[16px] font-medium text-white flex items-center justify-center h-[25px]  leading-[25px] border border-black rounded-full dark:border-white border-opacity-10  dark:border-opacity-10 ">
                     4
@@ -120,7 +120,7 @@ const LiveMatch = () => {
                 </div>
               </div>
               <div className="flex items-center my-7 gap-x-5">
-                <p className="pb-5 text-[16px] font-medium">14.5</p>
+                <p className="pb-5 text-[16px] font-medium">14.3</p>
                 <div className="flex items-center w-full pb-5 border-b gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5">
                   <p className="w-[25px] bg-yellow-600 text-[16px] font-medium text-white flex items-center justify-center h-[25px]  leading-[25px] border border-black rounded-full dark:border-white border-opacity-10  dark:border-opacity-10 ">
                     4
@@ -129,7 +129,7 @@ const LiveMatch = () => {
                 </div>
               </div>
               <div className="flex items-center my-7 gap-x-5">
-                <p className="pb-5 text-[16px] font-medium">14.5</p>
+                <p className="pb-5 text-[16px] font-medium">14.2</p>
                 <div className="flex items-center w-full pb-5 border-b gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5">
                   <p className="w-[25px] bg-yellow-600 text-[16px] font-medium text-white flex items-center justify-center h-[25px]  leading-[25px] border border-black rounded-full dark:border-white border-opacity-10  dark:border-opacity-10 ">
                     4
@@ -138,7 +138,7 @@ const LiveMatch = () => {
                 </div>
               </div>
               <div className="flex items-center my-7 gap-x-5">
-                <p className="pb-5 text-[16px] font-medium">14.5</p>
+                <p className="pb-5 text-[16px] font-medium">14.1</p>
                 <div className="flex items-center w-full pb-5 border-b gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5">
                   <p className="w-[25px] bg-yellow-600 text-[16px] font-medium text-white flex items-center justify-center h-[25px]  leading-[25px] border border-black rounded-full dark:border-white border-opacity-10  dark:border-opacity-10 ">
                     4

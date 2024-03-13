@@ -19,7 +19,7 @@ const FixtureMatchList = ({
   };
 
   return (
-    <div className="p-5 w-[70%] border-r border-black border-opacity-5 dark:border-primary">
+    <div className="p-5 w-[70%] dark:text-[#CFD1D3] text-black border-r border-black border-opacity-5 dark:border-primary">
       <div className="flex items-center justify-between">
         <div className="flex flex-wrap items-center ml-10 gap-x-3">
           {selectedTeams.map((team, index) => (

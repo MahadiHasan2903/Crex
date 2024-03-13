@@ -1,6 +1,7 @@
 "use client";
 import { cricketTeams } from "@/lib/utils/data";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 
@@ -33,8 +34,9 @@ const FixtureTeams = () => {
             className="flex flex-wrap mr-10 border-b dark:border-white border-opacity-5 dark:border-opacity-5"
           >
             {teamPair.map((team, cardIndex) => (
-              <div
+              <Link
                 key={cardIndex}
+                href={`fixtures/team-list/${team.id}`}
                 className={`flex items-center justify-start p-5 w-[50%] ${
                   cardIndex === 1
                     ? ""
@@ -43,7 +45,7 @@ const FixtureTeams = () => {
               >
                 <Image src="/BD.png" alt={team.Name} width={45} height={45} />
                 <p className="text-[15px] text-[#9FA3A7]">{team.Name}</p>
-              </div>
+              </Link>
             ))}
           </div>
         ))}
