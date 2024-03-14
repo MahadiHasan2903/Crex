@@ -3,13 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { MdExpandMore } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 
-const GenericFilter = ({
-  optionsArray,
-  selectedValue,
-  onSelection,
-  placeholder,
-  label,
-}) => {
+const GenericFilter = ({ optionsArray, selectedValue, onSelection, label }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const filterRef = useRef(null);

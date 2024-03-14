@@ -821,3 +821,173 @@ export const matchesData = [
     imageSrc: "/team.png",
   },
 ];
+
+export const playerStats = [
+  {
+    player: "Quinton de Kock",
+    team: "SA",
+    hundreds: 4,
+    matches: 10,
+    innings: 10,
+    highestScore: 174,
+    average: 59.4,
+    strikeRate: 107.03,
+    runs: 594,
+    fifties: 1,
+    fours: 57,
+    sixes: 21,
+  },
+  {
+    player: "Virat Kohli",
+    team: "IND",
+    hundreds: 3,
+    matches: 11,
+    innings: 11,
+    highestScore: 117,
+    average: 95.63,
+    strikeRate: 90.32,
+    runs: 765,
+    fifties: 6,
+    fours: 68,
+    sixes: 9,
+  },
+  {
+    player: "Rachin Ravindra",
+    team: "NZ",
+    hundreds: 3,
+    matches: 10,
+    innings: 10,
+    highestScore: 123,
+    average: 64.22,
+    strikeRate: 106.45,
+    runs: 578,
+    fifties: 2,
+    fours: 55,
+    sixes: 17,
+  },
+  {
+    player: "Player 18",
+    team: "Team 18",
+    hundreds: 0,
+    matches: 0,
+    innings: 0,
+    highestScore: 0,
+    average: 0,
+    strikeRate: 0,
+    runs: 0,
+    fifties: 0,
+    fours: 0,
+    sixes: 0,
+  },
+  {
+    player: "Player 19",
+    team: "Team 19",
+    hundreds: 0,
+    matches: 0,
+    innings: 0,
+    highestScore: 0,
+    average: 0,
+    strikeRate: 0,
+    runs: 0,
+    fifties: 0,
+    fours: 0,
+    sixes: 0,
+  },
+  {
+    player: "Player 20",
+    team: "Team 20",
+    hundreds: 0,
+    matches: 0,
+    innings: 0,
+    highestScore: 0,
+    average: 0,
+    strikeRate: 0,
+    runs: 0,
+    fifties: 0,
+    fours: 0,
+    sixes: 0,
+  },
+];
+
+export const seasonData = [
+  { label: "2023", value: "2023" },
+  { label: "2019", value: "2019" },
+  { label: "2015", value: "2015" },
+  { label: "2011", value: "2011" },
+  { label: "2007", value: "2007" },
+  { label: "2003", value: "2003" },
+  { label: "1999", value: "1999" },
+];
+
+export const tournament = [
+  { label: "BPL", value: "BPL" },
+  { label: "IPL", value: "IPL" },
+  { label: "PSL", value: "PSL" },
+  { label: "BBL", value: "BBL" },
+  { label: "CPL", value: "CPL" },
+  { label: "BBL", value: "BBL" },
+  { label: "BBL", value: "BBL" },
+  { label: "World Cup", value: "World Cup" },
+  { label: "Asia Cup", value: "Asia Cup" },
+  { label: "T20 WC", value: "T20 WC" },
+];
+
+export const playingCountry = [
+  { label: "All", value: "All" },
+  { label: "Bangladesh", value: "Bangladesh" },
+  { label: "India", value: "India" },
+  { label: "Pakistan", value: "PSL" },
+  { label: "Sri Lanka ", value: "Sri Lanka" },
+  { label: "Australia", value: "Australia" },
+  { label: "New zealand", value: "New zealand" },
+];
+
+export const record = [
+  { label: "Runs", value: "Runs" },
+  { label: "Fifties", value: "Fifties" },
+  { label: "Wickets", value: "Wickets" },
+  { label: "Hundreds", value: "Hundreds" },
+  { label: "Sixes", value: "Sixes" },
+  { label: "Fours", value: "Fours" },
+  { label: "Highest Strike Rate", value: "Highest Strike Rate" },
+];
+
+export const venueData = [
+  { label: "All", value: "All" },
+
+  {
+    label: "Dubai International Cricket Stadium, Dubai",
+    value: "Dubai International Cricket Stadium, Dubai",
+  },
+  {
+    label: "Sharjah Cricket Stadium, Sharjah",
+    value: "Sharjah Cricket Stadium, Sharjah",
+  },
+  { label: "Gaddafi Stadium, Lahore", value: "Gaddafi Stadium, Lahore" },
+  {
+    label: "National Bank Cricket Arena, Karachi",
+    value: "National Bank Cricket Arena, Karachi",
+  },
+  {
+    label: "Sheikh Zayed Stadium, Abu Dhabi",
+    value: "Sheikh Zayed Stadium, Abu Dhabi",
+  },
+  {
+    label: "Rawalpindi Cricket Stadium, Rawalpindi",
+    value: "Rawalpindi Cricket Stadium, Rawalpindi",
+  },
+  {
+    label: "Multan Cricket Stadium, Multan",
+    value: "Multan Cricket Stadium, Multan",
+  },
+];
+
+export const cricketFormatData = [
+  { label: "Test", value: "Test" },
+  { label: "ODI", value: "ODI" },
+  { label: "T20I", value: "T20I" },
+  { label: "T10", value: "T10" },
+  { label: "Twenty20", value: "Twenty20" },
+  { label: "One-Day", value: "One-Day" },
+  { label: "First-Class", value: "First-Class" },
+];

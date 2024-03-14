@@ -12,6 +12,9 @@ module.exports = {
         secondary: "#0C131A",
         tertiary: "#D3D1CF",
       },
+      backgroundImage: {
+        "state-corner-hero": "url('/stadium.webp')",
+      },
     },
   },
   plugins: [],
