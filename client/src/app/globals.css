@@ -12,3 +12,14 @@ input::-webkit-inner-spin-button {
     @apply dark:bg-[#0C131A] bg-white;
   }
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
