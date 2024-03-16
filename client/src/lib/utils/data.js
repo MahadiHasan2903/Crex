@@ -1157,6 +1157,8 @@ export const tournaments = [
   { name: "Champions Trophy", image: "/psl.png" },
 ];
 
+//Teams ranking data
+
 export const topTenODITeams = [
   { name: "England", rank: 1, rating: 123 },
   { name: "India", rank: 2, rating: 119 },
@@ -1194,4 +1196,575 @@ export const topTenTestTeams = [
   { name: "West Indies", rank: 8, rating: 100 },
   { name: "Bangladesh", rank: 9, rating: 95 },
   { name: "Zimbabwe", rank: 10, rating: 85 },
+];
+
+//Batsman ranking data
+export const topTenODIBatsmen = [
+  {
+    rank: 1,
+    name: "Virat Kohli",
+    rating: 870,
+    team: "IND",
+  },
+  {
+    rank: 2,
+    name: "Babar Azam",
+    rating: 837,
+    team: "PK",
+  },
+  {
+    rank: 3,
+    name: "Rohit Sharma",
+    rating: 836,
+    team: "IND",
+  },
+  {
+    rank: 4,
+    name: "Ross Taylor",
+    rating: 818,
+    team: "NZ",
+  },
+  {
+    rank: 5,
+    name: "Aaron Finch",
+    rating: 791,
+    team: "AUS",
+  },
+  {
+    rank: 6,
+    name: "David Warner",
+    rating: 773,
+    team: "AUS",
+  },
+  {
+    rank: 7,
+    name: "Quinton de Kock",
+    rating: 756,
+    team: "SA",
+  },
+  {
+    rank: 8,
+    name: "Jonny Bairstow",
+    rating: 754,
+    team: "ENG",
+  },
+  {
+    rank: 9,
+    name: "Fakhar Zaman",
+    rating: 747,
+    team: "PK",
+  },
+  {
+    rank: 10,
+    name: "Shai Hope",
+    rating: 717,
+    team: "WI",
+  },
+];
+
+export const topTenT20Batsmen = [
+  {
+    rank: 1,
+    name: "Dawid Malan",
+    rating: 892,
+    team: "ENG",
+  },
+  {
+    rank: 2,
+    name: "Babar Azam",
+    rating: 896,
+    team: "PK",
+  },
+  {
+    rank: 3,
+    name: "Aaron Finch",
+    rating: 830,
+    team: "AUS",
+  },
+  {
+    rank: 4,
+    name: "Virat Kohli",
+    rating: 776,
+    team: "IND",
+  },
+  {
+    rank: 5,
+    name: "KL Rahul",
+    rating: 760,
+    team: "IND",
+  },
+  {
+    rank: 6,
+    name: "Devon Conway",
+    rating: 756,
+    team: "NZ",
+  },
+  {
+    rank: 7,
+    name: "Rassie van der Dussen",
+    rating: 747,
+    team: "SA",
+  },
+  {
+    rank: 8,
+    name: "Glenn Maxwell",
+    rating: 741,
+    team: "AUS",
+  },
+  {
+    rank: 9,
+    name: "David Malan",
+    rating: 729,
+    team: "ENG",
+  },
+  {
+    rank: 10,
+    name: "Rohit Sharma",
+    rating: 715,
+    team: "IND",
+  },
+];
+
+export const topTenTestBatsmen = [
+  {
+    rank: 1,
+    name: "Kane Williamson",
+    rating: 919,
+    team: "NZ",
+  },
+  {
+    rank: 2,
+    name: "Steve Smith",
+    rating: 891,
+    team: "AUS",
+  },
+  {
+    rank: 3,
+    name: "Marnus Labuschagne",
+    rating: 878,
+    team: "AUS",
+  },
+  {
+    rank: 4,
+    name: "Joe Root",
+    rating: 876,
+    team: "ENG",
+  },
+  {
+    rank: 5,
+    name: "Virat Kohli",
+    rating: 873,
+    team: "IND",
+  },
+  {
+    rank: 6,
+    name: "Rohit Sharma",
+    rating: 761,
+    team: "IND",
+  },
+  {
+    rank: 7,
+    name: "David Warner",
+    rating: 759,
+    team: "AUS",
+  },
+  {
+    rank: 8,
+    name: "Ben Stokes",
+    rating: 755,
+    team: "ENG",
+  },
+  {
+    rank: 9,
+    name: "Ajinkya Rahane",
+    rating: 748,
+    team: "IND",
+  },
+  {
+    rank: 10,
+    name: "Henry Nicholls",
+    rating: 747,
+    team: "NZ",
+  },
+];
+
+//Bowler ranking data
+
+export const topTenODIBowlers = [
+  {
+    rank: 1,
+    name: "Trent Boult",
+    rating: 737,
+    team: "NZ",
+  },
+  {
+    rank: 2,
+    name: "Mujeeb Ur Rahman",
+    rating: 708,
+    team: "AFG",
+  },
+  {
+    rank: 3,
+    name: "Matt Henry",
+    rating: 691,
+    team: "NZ",
+  },
+  {
+    rank: 4,
+    name: "Jasprit Bumrah",
+    rating: 690,
+    team: "IND",
+  },
+  {
+    rank: 5,
+    name: "Mehidy Hasan",
+    rating: 668,
+    team: "BAN",
+  },
+  {
+    rank: 6,
+    name: "Kagiso Rabada",
+    rating: 666,
+    team: "SA",
+  },
+  {
+    rank: 7,
+    name: "Chris Woakes",
+    rating: 665,
+    team: "ENG",
+  },
+  {
+    rank: 8,
+    name: "Josh Hazlewood",
+    rating: 660,
+    team: "AUS",
+  },
+  {
+    rank: 9,
+    name: "Mohammad Amir",
+    rating: 647,
+    team: "PK",
+  },
+  {
+    rank: 10,
+    name: "Pat Cummins",
+    rating: 646,
+    team: "AUS",
+  },
+];
+
+export const topTenT20Bowlers = [
+  {
+    rank: 1,
+    name: "Tabraiz Shamsi",
+    rating: 792,
+    team: "SA",
+  },
+  {
+    rank: 2,
+    name: "Rashid Khan",
+    rating: 782,
+    team: "AFG",
+  },
+  {
+    rank: 3,
+    name: "Mujeeb Ur Rahman",
+    rating: 759,
+    team: "AFG",
+  },
+  {
+    rank: 4,
+    name: "Adil Rashid",
+    rating: 751,
+    team: "ENG",
+  },
+  {
+    rank: 5,
+    name: "Ashton Agar",
+    rating: 745,
+    team: "AUS",
+  },
+  {
+    rank: 6,
+    name: "Wanindu Hasaranga",
+    rating: 740,
+    team: "SL",
+  },
+  {
+    rank: 7,
+    name: "Adam Zampa",
+    rating: 736,
+    team: "AUS",
+  },
+  {
+    rank: 8,
+    name: "Ish Sodhi",
+    rating: 733,
+    team: "NZ",
+  },
+  {
+    rank: 9,
+    name: "Mitchell Santner",
+    rating: 731,
+    team: "NZ",
+  },
+  {
+    rank: 10,
+    name: "Shadab Khan",
+    rating: 729,
+    team: "PK",
+  },
+];
+
+export const topTenTestBowlers = [
+  {
+    rank: 1,
+    name: "Pat Cummins",
+    rating: 908,
+    team: "AUS",
+  },
+  {
+    rank: 2,
+    name: "Ravichandran Ashwin",
+    rating: 850,
+    team: "IND",
+  },
+  {
+    rank: 3,
+    name: "Tim Southee",
+    rating: 826,
+    team: "NZ",
+  },
+  {
+    rank: 4,
+    name: "Josh Hazlewood",
+    rating: 805,
+    team: "AUS",
+  },
+  {
+    rank: 5,
+    name: "Neil Wagner",
+    rating: 804,
+    team: "NZ",
+  },
+  {
+    rank: 6,
+    name: "Mitchell Starc",
+    rating: 800,
+    team: "AUS",
+  },
+  {
+    rank: 7,
+    name: "Kagiso Rabada",
+    rating: 794,
+    team: "SA",
+  },
+  {
+    rank: 8,
+    name: "Ravindra Jadeja",
+    rating: 772,
+    team: "IND",
+  },
+  {
+    rank: 9,
+    name: "Jason Holder",
+    rating: 766,
+    team: "WI",
+  },
+  {
+    rank: 10,
+    name: "Shaheen Afridi",
+    rating: 753,
+    team: "PK",
+  },
+];
+
+//All rounder ranking data
+export const topTenODIAllRounders = [
+  {
+    rank: 1,
+    name: "Shakib Al Hasan",
+    rating: 384,
+    team: "BAN",
+  },
+  {
+    rank: 2,
+    name: "Mohammad Nabi",
+    rating: 294,
+    team: "AFG",
+  },
+  {
+    rank: 3,
+    name: "Chris Woakes",
+    rating: 281,
+    team: "ENG",
+  },
+  {
+    rank: 4,
+    name: "Ravindra Jadeja",
+    rating: 280,
+    team: "IND",
+  },
+  {
+    rank: 5,
+    name: "Ben Stokes",
+    rating: 274,
+    team: "ENG",
+  },
+  {
+    rank: 6,
+    name: "Colin de Grandhomme",
+    rating: 266,
+    team: "NZ",
+  },
+  {
+    rank: 7,
+    name: "Imad Wasim",
+    rating: 256,
+    team: "PK",
+  },
+  {
+    rank: 8,
+    name: "Sean Williams",
+    rating: 243,
+    team: "ZIM",
+  },
+  {
+    rank: 9,
+    name: "Rashid Khan",
+    rating: 241,
+    team: "AFG",
+  },
+  {
+    rank: 10,
+    name: "Mitchell Marsh",
+    rating: 236,
+    team: "AUS",
+  },
+];
+
+export const topTenTestAllRounders = [
+  {
+    rank: 1,
+    name: "Ravindra Jadeja",
+    rating: 397,
+    team: "IND",
+  },
+  {
+    rank: 2,
+    name: "Ben Stokes",
+    rating: 381,
+    team: "ENG",
+  },
+  {
+    rank: 3,
+    name: "Kyle Jamieson",
+    rating: 362,
+    team: "NZ",
+  },
+  {
+    rank: 4,
+    name: "Ravichandran Ashwin",
+    rating: 342,
+    team: "IND",
+  },
+  {
+    rank: 5,
+    name: "Jason Holder",
+    rating: 326,
+    team: "WI",
+  },
+  {
+    rank: 6,
+    name: "Chris Woakes",
+    rating: 317,
+    team: "ENG",
+  },
+  {
+    rank: 7,
+    name: "Mitchell Marsh",
+    rating: 308,
+    team: "AUS",
+  },
+  {
+    rank: 8,
+    name: "Colin de Grandhomme",
+    rating: 307,
+    team: "NZ",
+  },
+  {
+    rank: 9,
+    name: "Stuart Broad",
+    rating: 280,
+    team: "ENG",
+  },
+  {
+    rank: 10,
+    name: "Keshav Maharaj",
+    rating: 277,
+    team: "SA",
+  },
+];
+
+export const topTenT20AllRounders = [
+  {
+    rank: 1,
+    name: "Shakib Al Hasan",
+    rating: 303,
+    team: "BAN",
+  },
+  {
+    rank: 2,
+    name: "Mohammad Nabi",
+    rating: 278,
+    team: "AFG",
+  },
+  {
+    rank: 3,
+    name: "Ravindra Jadeja",
+    rating: 254,
+    team: "IND",
+  },
+  {
+    rank: 4,
+    name: "Chris Woakes",
+    rating: 234,
+    team: "ENG",
+  },
+  {
+    rank: 5,
+    name: "Glenn Maxwell",
+    rating: 214,
+    team: "AUS",
+  },
+  {
+    rank: 6,
+    name: "Sean Williams",
+    rating: 213,
+    team: "ZIM",
+  },
+  {
+    rank: 7,
+    name: "Mitchell Marsh",
+    rating: 205,
+    team: "AUS",
+  },
+  {
+    rank: 8,
+    name: "Colin de Grandhomme",
+    rating: 204,
+    team: "NZ",
+  },
+  {
+    rank: 9,
+    name: "Rashid Khan",
+    rating: 201,
+    team: "AFG",
+  },
+  {
+    rank: 10,
+    name: "Kieron Pollard",
+    rating: 198,
+    team: "WI",
+  },
 ];

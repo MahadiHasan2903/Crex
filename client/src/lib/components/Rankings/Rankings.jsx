@@ -25,7 +25,7 @@ const Rankings = () => {
             className={`px-[20px] py-[8px] border rounded-[5px] text-[14px] dark:border-white border-opacity-5 dark:border-opacity-5 ${isButtonActive(
               "Team"
             )}`}
-            onClick={() => handleButtonClick("Team1")}
+            onClick={() => handleButtonClick("Team")}
           >
             Team
           </button>
@@ -63,5 +63,4 @@ const Rankings = () => {
     </div>
   );
 };
-
 export default Rankings;
