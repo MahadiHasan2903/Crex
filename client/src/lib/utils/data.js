@@ -1156,3 +1156,42 @@ export const tournaments = [
   { name: "Women's World Cup 2024", image: "/psl.png" },
   { name: "Champions Trophy", image: "/psl.png" },
 ];
+
+export const topTenODITeams = [
+  { name: "England", rank: 1, rating: 123 },
+  { name: "India", rank: 2, rating: 119 },
+  { name: "New Zealand", rank: 3, rating: 118 },
+  { name: "Australia", rank: 4, rating: 116 },
+  { name: "South Africa", rank: 5, rating: 110 },
+  { name: "Pakistan", rank: 6, rating: 106 },
+  { name: "Bangladesh", rank: 7, rating: 92 },
+  { name: "Sri Lanka", rank: 8, rating: 89 },
+  { name: "West Indies", rank: 9, rating: 88 },
+  { name: "Afghanistan", rank: 10, rating: 80 },
+];
+
+export const topTenT20Teams = [
+  { name: "Australia", rank: 1, rating: 125 },
+  { name: "Pakistan", rank: 2, rating: 122 },
+  { name: "India", rank: 3, rating: 120 },
+  { name: "England", rank: 4, rating: 118 },
+  { name: "New Zealand", rank: 5, rating: 115 },
+  { name: "South Africa", rank: 6, rating: 110 },
+  { name: "West Indies", rank: 7, rating: 100 },
+  { name: "Sri Lanka", rank: 8, rating: 95 },
+  { name: "Bangladesh", rank: 9, rating: 92 },
+  { name: "Afghanistan", rank: 10, rating: 85 },
+];
+
+export const topTenTestTeams = [
+  { name: "India", rank: 1, rating: 126 },
+  { name: "New Zealand", rank: 2, rating: 124 },
+  { name: "Australia", rank: 3, rating: 122 },
+  { name: "England", rank: 4, rating: 120 },
+  { name: "South Africa", rank: 5, rating: 115 },
+  { name: "Pakistan", rank: 6, rating: 110 },
+  { name: "Sri Lanka", rank: 7, rating: 105 },
+  { name: "West Indies", rank: 8, rating: 100 },
+  { name: "Bangladesh", rank: 9, rating: 95 },
+  { name: "Zimbabwe", rank: 10, rating: 85 },
+];
