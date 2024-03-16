@@ -11,25 +11,29 @@ const ToggleRankings = () => {
   };
   return (
     <div>
-      <div className="w-full flex items-center px-[200px]  text-[#CFD1D399] bg-[#0E1720] relative py-2 gap-x-12">
-        <p className="font-regular text-[#CFD1D3] cursor-pointer text-[14px] pb-[5px] mr-[1px]">
+      <div className="w-full flex items-center px-[200px]  text-[#CFD1D399] bg-[#0E1720] relative pb-3 pt-2 gap-x-12">
+        <p className="font-regular -mb-3 text-[#CFD1D3] cursor-pointer text-[14px] pb-[5px] mr-[1px]">
           Category
         </p>
-        <p className="h-full ">|</p>
+        <p className="h-full -mb-3">|</p>
 
-        <div className="flex items-center gap-x-12">
+        <div className="flex items-center -mb-3 gap-x-12">
           <p
             onClick={() => handleTabClick("Men")}
-            className={`font-bold cursor-pointer text-[14px] pb-[5px] ${
-              activeTab === "Men" ? "border-b-2 border-[#FF7575]" : ""
+            className={`font-bold  cursor-pointer text-[14px] pb-[5px] ${
+              activeTab === "Men"
+                ? "border-b-2 border-[#FF7575] text-[#FCFCFCCC]"
+                : "text-[#FCFCFC4D]"
             }`}
           >
             Men
           </p>
           <p
             onClick={() => handleTabClick("Women")}
-            className={`font-bold cursor-pointer text-[14px] pb-[5px] ${
-              activeTab === "Women" ? "border-b-2 border-[#FF7575]" : ""
+            className={`font-bold  cursor-pointer text-[14px] pb-[5px] ${
+              activeTab === "Women"
+                ? "border-b-2 border-[#FF7575] text-[#FCFCFCCC]"
+                : "text-[#FCFCFC4D]"
             }`}
           >
             Women

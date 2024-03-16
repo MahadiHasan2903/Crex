@@ -7,8 +7,8 @@ const TeamRankingTable = ({ topTeams, format }) => {
     <div className="w-full mb-[150px] border border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5">
       <div className="p-3 ">
         <p className="text-end text-[14px] font-semibold">{format}</p>
-        <div className="dark:bg-[#121c28] px-5 pt-2 bg-[#ECF0F6] relative flex items-center ml-6 my-2 rounded-[5px] justify-between">
-          <div className="flex items-center  -ml-[50px]">
+        <div className="dark:bg-[#121c28]  px-5 pt-2 bg-[#ECF0F6] relative flex items-center ml-6 my-2 rounded-[5px] justify-between">
+          <div className="flex items-center -mt-2  -ml-[50px]">
             <div className="absolute dark:bg-[#15222E] bg-[#F7F7F7] flex items-center justify-center rounded-[25px]">
               <Image src="/BD.png" width={56} height={56} alt="team" />
             </div>

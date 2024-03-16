@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { menuItems } from "@/lib/utils/data";
 import ThemeToggler from "@/lib/theme/ThemeToggler";
 import SeriesSlider from "./SeriesSlider";
+import { MdOutlineExpandMore } from "react-icons/md";
 
 const Header = ({ allSeries }) => {
   const pathName = usePathname();
@@ -25,7 +26,7 @@ const Header = ({ allSeries }) => {
   // Close the popup when clicking outside the SeriesSlider
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const seriesSliderPopup = document.getElementById("series-slider-popup");
+      const seriesSliderPopup = document.getElementById("seriesSlider");
 
       if (
         seriesSliderPopup &&
@@ -63,17 +64,20 @@ const Header = ({ allSeries }) => {
                     } ${
                       item.icon ? "font-semibold flex items-center gap-x-2" : ""
                     }`}
-                    onClick={(e) =>
-                      item.label === "Series"
-                        ? handleSeriesSliderClick(e)
-                        : null
-                    }
                   >
                     {item.label}
                     {item.icon && item.icon}
                   </li>
                 </Link>
               ))}
+              <li
+                className={`pb-[17px] px-3  cursor-pointer font-semibold flex items-center gap-x-2
+                ${"series" === firstBlock ? "border-b-2 border-white" : ""}
+                `}
+                onClick={(e) => handleSeriesSliderClick(e)}
+              >
+                Series <MdOutlineExpandMore />
+              </li>
             </ul>
             <ThemeToggler
               styles="flex items-center pb-4 ml-5 text-white"
@@ -84,9 +88,9 @@ const Header = ({ allSeries }) => {
         </div>
       </div>
       {isSeriesSliderPopupOpen && (
-        <div id="series-slider-popup">
+        <div id="seriesSlider">
           <SeriesSlider
-            onClose={closeSeriesSliderPopup}
+            onClosePopup={closeSeriesSliderPopup}
             allSeries={allSeries}
           />
         </div>

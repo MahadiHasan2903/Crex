@@ -8,6 +8,9 @@ import { ThemeProvider } from "@/lib/theme/ThemeProvider";
 import AuthProvider from "@/lib/config/AuthProvider";
 import MobileFooter from "@/lib/components/Layout/MobileFooter";
 import api from "@/lib/api";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 

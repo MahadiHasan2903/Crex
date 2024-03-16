@@ -31,7 +31,7 @@ const PlayerRankingTable = ({ topPlayers, format }) => {
               {topPlayers[0].name}
             </p>
           </div>
-          <div className="text-[#192430] ">|</div>
+          <div className="text-[#192430] -ml-10">|</div>
           <div className="flex flex-col items-center justify-center pr-5">
             <p className="text-[11px] font-medium opacity-70">RATING</p>
             <p className="text-[22px] font-semibold">{topPlayers[0].rating}</p>

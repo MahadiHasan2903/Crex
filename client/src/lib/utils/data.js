@@ -1,10 +1,8 @@
-import { MdOutlineExpandMore } from "react-icons/md";
 import { GiCricketBat } from "react-icons/gi";
 import coverImage from "../../../public/cover.png";
 
 export const menuItems = [
   { label: "Home", href: "/" },
-  { label: "Series", href: "#series", icon: <MdOutlineExpandMore /> },
   { label: "Fixtures", href: "/fixtures" },
   {
     label: "States Corner",
@@ -13,6 +11,49 @@ export const menuItems = [
     icon: <GiCricketBat color="#F3AD61" />,
   },
   { label: "Rankings", href: "/rankings" },
+];
+
+export const allSeries = [
+  {
+    id: 1,
+    name: "IPL 2024",
+  },
+  {
+    id: 2,
+    name: "The Ashes",
+  },
+  {
+    id: 3,
+    name: "ICC Cricket World Cup",
+  },
+  {
+    id: 4,
+    name: "Pakistan Super League",
+  },
+  {
+    id: 5,
+    name: "Big Bash League",
+  },
+  {
+    id: 6,
+    name: "Caribbean Premier League",
+  },
+  {
+    id: 7,
+    name: "Bangladesh Premier League",
+  },
+  {
+    id: 8,
+    name: "Sri Lanka Premier League",
+  },
+  {
+    id: 9,
+    name: "T20 Blast",
+  },
+  {
+    id: 10,
+    name: "Ram Slam T20 Challenge",
+  },
 ];
 
 export const fixtureLinks = [
