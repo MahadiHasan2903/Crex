@@ -25,10 +25,10 @@ const SeriesBanner = () => {
   };
   return (
     <>
-      <div className="w-full relative text-[#FCFCFC] bg-[#0F1820] ">
+      <div className="w-full relative text-[#FCFCFC] bg-[#122638] dark:bg-[#0F1820] ">
         <div className="border-y border-[#797b7e] border-opacity-30 px-[150px]">
           <div className="flex items-center justify-between py-6">
-            <div className="flex items-center gap-x-8">
+            <div className="flex items-center py-3 gap-x-8">
               <div className="p-[8px] cursor-pointer  bg-[#9fa3a733] border border-[#9fa3a733]">
                 <MdOutlineChevronLeft size={15} color="#FCFCFC" />
               </div>
@@ -56,8 +56,8 @@ const SeriesBanner = () => {
           </div>
         </div>
         <div>
-          <div className="w-full text-[#CFD1D399] bg-[#0E1720]  py-2">
-            <div className="px-[280px]  flex items-center gap-x-8">
+          <div className="w-full text-[#CFD1D399] bg-[#122638] dark:bg-[#0F1820]  py-2">
+            <div className="px-[250px]  flex items-center gap-x-8">
               {tabNames.map((tabName, index) => (
                 <p
                   key={index}

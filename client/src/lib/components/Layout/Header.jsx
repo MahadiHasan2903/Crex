@@ -6,7 +6,7 @@ import logo from "../../../../public/logo.webp";
 import { usePathname } from "next/navigation";
 import { menuItems } from "@/lib/utils/data";
 import ThemeToggler from "@/lib/theme/ThemeToggler";
-import SeriesSlider from "./SeriesSlider";
+import SeriesSlider from "../Series/SeriesSlider";
 import { MdOutlineExpandMore } from "react-icons/md";
 
 const Header = ({ allSeries }) => {

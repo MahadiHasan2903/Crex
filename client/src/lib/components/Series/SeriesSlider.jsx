@@ -36,8 +36,8 @@ const SeriesSlider = ({ onClosePopup }) => {
             <FaChevronLeft
               size={25}
               color="white"
-              className={`cursor-pointer ${
-                canShowPrev ? "" : "opacity-50 pointer-events-none"
+              className={`cursor-pointer  -mt-10${
+                canShowPrev ? "" : "opacity-50 pointer-events-none -mt-10"
               }`}
               onClick={canShowPrev ? handlePrevClick : undefined}
             />
@@ -50,7 +50,7 @@ const SeriesSlider = ({ onClosePopup }) => {
                     key={series.id}
                     onClick={onClosePopup}
                   >
-                    <div className="flex flex-col box-border  bg-transparent cursor-pointer transition-all rounded-md hover:bg-[#212529] px-5 py-3">
+                    <div className="flex flex-col box-border  bg-transparent cursor-pointer transition-all rounded-md hover:bg-[#212529] p-5">
                       <Image
                         src="/psl.png"
                         alt="series"
@@ -67,8 +67,8 @@ const SeriesSlider = ({ onClosePopup }) => {
             <FaChevronRight
               size={25}
               color="white"
-              className={`cursor-pointer ${
-                canShowNext ? "" : "opacity-50 pointer-events-none"
+              className={`cursor-pointer -mt-10 ${
+                canShowNext ? "" : "opacity-50 pointer-events-none "
               }`}
               onClick={canShowNext ? handleNextClick : undefined}
             />
