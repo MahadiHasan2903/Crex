@@ -7,6 +7,7 @@ import SeriesMatches from "./Matches/SeriesMatches";
 import SeriesSquads from "./Squads/SeriesSquads";
 import SeriesStates from "./States/SeriesStates";
 import SeriesInfo from "./Info/SeriesInfo";
+import SeriesNews from "./News/SeriesNews";
 
 const SeriesBanner = () => {
   const tabNames = [
