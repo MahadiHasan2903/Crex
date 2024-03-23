@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const teams = [
   {
@@ -122,20 +123,22 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <div>
-                          <Image
-                            src="/player.png"
-                            width={77}
-                            height={75}
-                            className="-mb-5"
-                          />
-                          <Image
-                            src="/jersey.png"
-                            width={77}
-                            height={30}
-                            className="z-[9994]"
-                          />
-                        </div>
+                        <Link href="/player-profile">
+                          <div>
+                            <Image
+                              src="/player.png"
+                              width={77}
+                              height={75}
+                              className="-mb-5"
+                            />
+                            <Image
+                              src="/jersey.png"
+                              width={77}
+                              height={30}
+                              className="z-[9994]"
+                            />
+                          </div>
+                        </Link>
                         <div className="mt-5">
                           <p className="text-[16px] dark:text-[#EAAE54] text-[#9E6105]">
                             {player.name}
@@ -162,20 +165,22 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <div>
-                          <Image
-                            src="/player.png"
-                            width={77}
-                            height={75}
-                            className="-mb-5"
-                          />
-                          <Image
-                            src="/jersey.png"
-                            width={77}
-                            height={30}
-                            className="z-[9994]"
-                          />
-                        </div>
+                        <Link href="/player-profile">
+                          <div>
+                            <Image
+                              src="/player.png"
+                              width={77}
+                              height={75}
+                              className="-mb-5"
+                            />
+                            <Image
+                              src="/jersey.png"
+                              width={77}
+                              height={30}
+                              className="z-[9994]"
+                            />
+                          </div>
+                        </Link>
                         <div className="mt-5">
                           <p className="text-[16px] dark:text-[#EAAE54] text-[#9E6105]">
                             {player.name}
@@ -206,20 +211,22 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <div>
-                          <Image
-                            src="/player.png"
-                            width={77}
-                            height={75}
-                            className="-mb-5"
-                          />
-                          <Image
-                            src="/jersey.png"
-                            width={77}
-                            height={30}
-                            className="z-[9994]"
-                          />
-                        </div>
+                        <Link href="/player-profile">
+                          <div>
+                            <Image
+                              src="/player.png"
+                              width={77}
+                              height={75}
+                              className="-mb-5"
+                            />
+                            <Image
+                              src="/jersey.png"
+                              width={77}
+                              height={30}
+                              className="z-[9994]"
+                            />
+                          </div>
+                        </Link>
                         <div className="mt-5">
                           <p className="text-[16px] dark:text-[#EAAE54] text-[#9E6105]">
                             {player.name}

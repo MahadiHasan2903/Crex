@@ -4,6 +4,7 @@ import FeaturedMatches from "./FeaturedMatches";
 import PointsTable from "./PointsTable";
 import Teams from "./Teams";
 import SeriesInfo from "./SeriesInfo";
+import Link from "next/link";
 
 const statsData = [
   {
@@ -55,20 +56,22 @@ const SeriesOverview = () => {
               </p>
               <div className="flex items-center justify-between ">
                 <div className="flex items-center ">
-                  <div className="mt-2 ml-4 -mb-2">
-                    <Image
-                      src="/player.png"
-                      width={78}
-                      height={76}
-                      className="-mb-5"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={78}
-                      height={30}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div className="mt-2 ml-4 -mb-2">
+                      <Image
+                        src="/player.png"
+                        width={78}
+                        height={76}
+                        className="-mb-5"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={78}
+                        height={30}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
                   <div className="mt-2">
                     <p className="text-[16px] font-semibold">
                       {stat.playerName}

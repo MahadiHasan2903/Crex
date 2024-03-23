@@ -10,6 +10,7 @@ import {
   cricketFormatData,
 } from "@/lib/utils/data";
 import StatisticsFilter from "./StatisticsFilter";
+import Link from "next/link";
 
 const StateCornerBanner = () => {
   const [showFilters, setShowFilters] = useState(false);
@@ -79,62 +80,66 @@ const StateCornerBanner = () => {
                   <p className="text-[23px] font-semibold opacity-70 ">
                     S Hasan
                   </p>
-
-                  <div className="relative">
-                    <Image
-                      src="/player.png"
-                      width={110}
-                      height={106}
-                      className="-mb-7"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={110}
-                      height={43}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div className="relative">
+                      <Image
+                        src="/player.png"
+                        width={110}
+                        height={106}
+                        className="-mb-7"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={110}
+                        height={43}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
                 </div>
                 <div className="flex flex-col justify-center ">
                   <p className="text-[23px] font-semibold opacity-70 pl-5 ">
                     S Hasan
                   </p>
 
-                  <div className="relative">
-                    <Image
-                      src="/player.png"
-                      width={150}
-                      height={145}
-                      className="-mb-9"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={150}
-                      height={58}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div className="relative">
+                      <Image
+                        src="/player.png"
+                        width={150}
+                        height={145}
+                        className="-mb-9"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={150}
+                        height={58}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-col justify-center ">
                   <p className="text-[23px] font-semibold opacity-70 ">
                     S Hasan
                   </p>
-
-                  <div className="relative">
-                    <Image
-                      src="/player.png"
-                      width={110}
-                      height={106}
-                      className="-mb-7"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={110}
-                      height={43}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div className="relative">
+                      <Image
+                        src="/player.png"
+                        width={110}
+                        height={106}
+                        className="-mb-7"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={110}
+                        height={43}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

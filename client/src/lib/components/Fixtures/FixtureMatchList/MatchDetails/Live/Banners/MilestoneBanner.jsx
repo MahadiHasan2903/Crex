@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const MilestoneBanner = () => {
@@ -13,15 +14,18 @@ const MilestoneBanner = () => {
         <Image src="/team.png" width={195} height={195} />
       </div>
       <div className="flex items-center gap-x-8">
-        <div className="relative -mb-8">
-          <Image src="/player.png" width={82} height={80} className="-mb-5" />
-          <Image
-            src="/jersey.png"
-            width={82}
-            height={30}
-            className="z-[9994]"
-          />
-        </div>
+        <Link href="/player-profile">
+          <div className="relative -mb-8">
+            <Image src="/player.png" width={82} height={80} className="-mb-5" />
+            <Image
+              src="/jersey.png"
+              width={82}
+              height={30}
+              className="z-[9994]"
+            />
+          </div>
+        </Link>
+
         <div className="flex flex-col justify-center item-center ">
           <p className="text-[20px] font-bold text-[white] mb-1">
             Sakib Al Hasan

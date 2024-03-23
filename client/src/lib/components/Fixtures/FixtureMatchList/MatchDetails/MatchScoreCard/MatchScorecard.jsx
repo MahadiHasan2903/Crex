@@ -6,6 +6,7 @@ import BowlingScore from "./BowlingScore";
 import FallOfWickets from "./FallOfWickets";
 import PartnershipScore from "./PartnershipScore";
 import { bangladeshCricketTeam } from "@/lib/utils/data";
+import Link from "next/link";
 
 const MatchScoreCard = () => {
   const [activeButton, setActiveButton] = useState("BD");
@@ -79,20 +80,23 @@ const MatchScoreCard = () => {
                   className="flex items-center justify-between w-full"
                 >
                   <div className="flex items-center m-5 gap-x-3">
-                    <div className="relative">
-                      <Image
-                        src="/player.png"
-                        width={36}
-                        height={20}
-                        className="-mb-2.5"
-                      />
-                      <Image
-                        src="/jersey.png"
-                        width={36}
-                        height={20}
-                        className="z-[9994]"
-                      />
-                    </div>
+                    <Link href="/player-profile">
+                      <div className="relative">
+                        <Image
+                          src="/player.png"
+                          width={36}
+                          height={20}
+                          className="-mb-2.5"
+                        />
+                        <Image
+                          src="/jersey.png"
+                          width={36}
+                          height={20}
+                          className="z-[9994]"
+                        />
+                      </div>
+                    </Link>
+
                     <div>
                       <p className="text-[14px] text-[#CFD1D3]">
                         {player.playerName}

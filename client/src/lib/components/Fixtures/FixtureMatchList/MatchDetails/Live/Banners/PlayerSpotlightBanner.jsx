@@ -40,15 +40,23 @@ const PlayerSpotlightBanner = ({ player }) => {
           <Image src="/team.png" width={150} height={150} />
         </div>
         <div className="flex items-center gap-x-8">
-          <div className="relative -mb-8">
-            <Image src="/player.png" width={80} height={78} className="-mb-5" />
-            <Image
-              src="/jersey.png"
-              width={80}
-              height={30}
-              className="z-[9994]"
-            />
-          </div>
+          <Link href="/player-profile">
+            <div className="relative -mb-8">
+              <Image
+                src="/player.png"
+                width={80}
+                height={78}
+                className="-mb-5"
+              />
+              <Image
+                src="/jersey.png"
+                width={80}
+                height={30}
+                className="z-[9994]"
+              />
+            </div>
+          </Link>
+
           <div className="flex flex-col justify-center mt-3 item-center ">
             <p className="text-[20px] font-bold text-[white] mb-1 opacity-90">
               {player.name}

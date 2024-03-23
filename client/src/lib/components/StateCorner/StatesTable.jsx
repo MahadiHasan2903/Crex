@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { playersStats, tournaments } from "@/lib/utils/data";
 import Image from "next/image";
 import { MdChevronRight } from "react-icons/md";
+import Link from "next/link";
 
 const StatesTable = () => {
   const [activeTournament, setActiveTournament] = useState(0);
@@ -36,20 +37,22 @@ const StatesTable = () => {
               >
                 <td className="w-[5%]">{player.id}</td>
                 <td className="flex items-center w-[20%] gap-x-1">
-                  <div className="relative">
-                    <Image
-                      src="/player.png"
-                      width={30}
-                      height={29}
-                      className="-mb-2"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={30}
-                      height={12}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div className="relative">
+                      <Image
+                        src="/player.png"
+                        width={30}
+                        height={29}
+                        className="-mb-2"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={30}
+                        height={12}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
                   {player.Player}
                 </td>
                 <td className="flex items-center w-[10%]">

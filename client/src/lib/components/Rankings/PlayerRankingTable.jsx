@@ -13,20 +13,23 @@ const PlayerRankingTable = ({ topPlayers, format }) => {
             <div className="absolute dark:bg-[#15222E] bg-[#F7F7F7] -ml-8 mt-7 z-[9999999] flex items-center justify-center rounded-[25px]">
               <Image src="/BD.png" width={30} height={30} alt="team" />
             </div>
-            <div className="absolute -ml-4 -mt-9">
-              <Image
-                src="/player.png"
-                width={76}
-                height={74}
-                className="-mb-5"
-              />
-              <Image
-                src="/jersey.png"
-                width={76}
-                height={30}
-                className="z-[9994]"
-              />
-            </div>
+            <Link href="/player-profile">
+              <div className="absolute -ml-4 -mt-9">
+                <Image
+                  src="/player.png"
+                  width={76}
+                  height={74}
+                  className="-mb-5"
+                />
+                <Image
+                  src="/jersey.png"
+                  width={76}
+                  height={30}
+                  className="z-[9994]"
+                />
+              </div>
+            </Link>
+
             <p className=" ml-[80px] dark:text-[#6EB4EF] text-[#1860A6] w-[40%] text-[14px]">
               {topPlayers[0].name}
             </p>

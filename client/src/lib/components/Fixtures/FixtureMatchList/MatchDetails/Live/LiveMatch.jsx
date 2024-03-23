@@ -5,6 +5,7 @@ import WicketBanner from "./Banners/WicketBanner";
 import MilestoneBanner from "./Banners/MilestoneBanner";
 import PlayerSpotlightBanner from "./Banners/PlayerSpotlightBanner";
 import { cricketPlayers, players } from "@/lib/utils/data";
+import Link from "next/link";
 
 const LiveMatch = () => {
   const [activeButton, setActiveButton] = useState("All");
@@ -163,20 +164,23 @@ const LiveMatch = () => {
           <p className="text-[18px] font-medium">Player of the Match</p>
 
           <div className="flex items-center mt-5 gap-x-5">
-            <div className="relative">
-              <Image
-                src="/player.png"
-                width={82}
-                height={80}
-                className="-mb-5"
-              />
-              <Image
-                src="/jersey.png"
-                width={82}
-                height={30}
-                className="z-[9994]"
-              />
-            </div>
+            <Link href="/player-profile">
+              <div className="relative">
+                <Image
+                  src="/player.png"
+                  width={82}
+                  height={80}
+                  className="-mb-5"
+                />
+                <Image
+                  src="/jersey.png"
+                  width={82}
+                  height={30}
+                  className="z-[9994]"
+                />
+              </div>
+            </Link>
+
             <div>
               <p className="text-[18px] font-semibold">Chadwick Walton</p>
               <p className="text-[14px] my-2">NY Superstar Strikers</p>

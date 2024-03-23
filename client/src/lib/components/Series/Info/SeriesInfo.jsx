@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const SeriesInfo = () => {
@@ -19,20 +20,23 @@ const SeriesInfo = () => {
               <div className="dark:bg-[#251D18] bg-[#F4E6D8] p-3 w-full rounded-md">
                 <p className="text-[14px] mb-5">Player of the match</p>
                 <div className="flex items-center gap-x-3">
-                  <div>
-                    <Image
-                      src="/player.png"
-                      width={48}
-                      height={47}
-                      className="-mb-[12px]"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={48}
-                      height={19}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div>
+                      <Image
+                        src="/player.png"
+                        width={48}
+                        height={47}
+                        className="-mb-[12px]"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={48}
+                        height={19}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
+
                   <div>
                     <p className="text-[16px] font-medium">N H Shanto</p>
                     <p className="text-[14px] text-[#9FA3A7]">Bangladesh</p>
@@ -54,20 +58,23 @@ const SeriesInfo = () => {
               <div className="dark:bg-[#131E32] bg-[#E2E7F5] p-3 w-full rounded-md">
                 <p className="text-[14px] mb-5">Player of the match</p>
                 <div className="flex items-center gap-x-3">
-                  <div>
-                    <Image
-                      src="/player.png"
-                      width={48}
-                      height={47}
-                      className="-mb-[12px]"
-                    />
-                    <Image
-                      src="/jersey.png"
-                      width={48}
-                      height={19}
-                      className="z-[9994]"
-                    />
-                  </div>
+                  <Link href="/player-profile">
+                    <div>
+                      <Image
+                        src="/player.png"
+                        width={48}
+                        height={47}
+                        className="-mb-[12px]"
+                      />
+                      <Image
+                        src="/jersey.png"
+                        width={48}
+                        height={19}
+                        className="z-[9994]"
+                      />
+                    </div>
+                  </Link>
+
                   <div>
                     <p className="text-[16px] font-medium">K Mendis</p>
                     <p className="text-[14px] text-[#9FA3A7]">Sri Lanka</p>
