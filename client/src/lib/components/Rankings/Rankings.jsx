@@ -51,7 +51,7 @@ const Rankings = () => {
             )}`}
             onClick={() => handleButtonClick("AllRounder")}
           >
-            AllRounder
+            All Rounder
           </button>
         </div>
 

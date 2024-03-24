@@ -8,7 +8,7 @@ const WicketBanner = ({ player }) => {
     <div className="flex items-center justify-between my-2 px-8 py-3 rounded-lg bg-gradient-to-r from-[#8E2A18] to-[#A11E17]">
       <div className="flex justify-center item-center gap-x-8">
         <div>
-          <Link href="/player-profile">
+          <Link href={`/player-profile/${1}`}>
             <div className="relative bg-[#722213] px-4 rounded-t-lg pt-2">
               <Image
                 src="/player.png"

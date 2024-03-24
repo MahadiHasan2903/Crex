@@ -80,7 +80,7 @@ const MatchScoreCard = () => {
                   className="flex items-center justify-between w-full"
                 >
                   <div className="flex items-center m-5 gap-x-3">
-                    <Link href="/player-profile">
+                    <Link href={`/player-profile/${1}`}>
                       <div className="relative">
                         <Image
                           src="/player.png"

@@ -2,10 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import PlayerOverview from "./PlayerOverview";
-import PlayerMatches from "./PlayerMatches";
-import PlayerNews from "./PlayerNews";
-import PlayerInfo from "./PlayerInfo";
 
 const playerRankings = [
   "#49 Batter in ODI",
@@ -19,14 +15,7 @@ const playerRankings = [
   "#3 All Rounder in TEST",
 ];
 
-const tabNames = ["Overview", "Matches", "News", "Player Info"];
-
 const PlayerProfileBanner = () => {
-  const [activeTab, setActiveTab] = useState("Overview");
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
   return (
     <>
       <div className="w-full ">
@@ -34,7 +23,7 @@ const PlayerProfileBanner = () => {
           <div className="w-[75%]">
             <div className="flex items-start justify-between mt-5">
               <div className="w-1/3 mt-4 mr-12">
-                <Link href="/player-profile">
+                <Link href={`/player-profile/${1}`}>
                   <div className="mt-2 ml-4 -mb-2">
                     <Image
                       src="/player.png"
@@ -79,30 +68,7 @@ const PlayerProfileBanner = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="w-full text-[#CFD1D399] dark:bg-[#131E29]  bg-primary py-2">
-            <div className="px-[200px]  flex items-center gap-x-8">
-              {tabNames.map((tabName, index) => (
-                <p
-                  key={index}
-                  onClick={() => handleTabClick(tabName)}
-                  className={`relative font-bold  -mb-[10px] cursor-pointer text-[16px] pb-[10px] ${
-                    activeTab === tabName
-                      ? "border-b-2 border-[#FF7575] text-[#FCFCFCCC]"
-                      : "text-[#FCFCFC4D]"
-                  }`}
-                >
-                  {tabName}
-                </p>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
-      {activeTab === "Overview" && <PlayerOverview />}
-      {activeTab === "Matches" && <PlayerMatches />}
-      {activeTab === "News" && <PlayerNews />}
-      {activeTab === "Player Info" && <PlayerInfo />}
     </>
   );
 };

@@ -14,7 +14,7 @@ const MilestoneBanner = () => {
         <Image src="/team.png" width={195} height={195} />
       </div>
       <div className="flex items-center gap-x-8">
-        <Link href="/player-profile">
+        <Link href={`/player-profile/${1}`}>
           <div className="relative -mb-8">
             <Image src="/player.png" width={82} height={80} className="-mb-5" />
             <Image

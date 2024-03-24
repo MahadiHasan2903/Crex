@@ -20,7 +20,7 @@ const SeriesInfo = () => {
               <div className="dark:bg-[#251D18] bg-[#F4E6D8] p-3 w-full rounded-md">
                 <p className="text-[14px] mb-5">Player of the match</p>
                 <div className="flex items-center gap-x-3">
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div>
                       <Image
                         src="/player.png"
@@ -58,7 +58,7 @@ const SeriesInfo = () => {
               <div className="dark:bg-[#131E32] bg-[#E2E7F5] p-3 w-full rounded-md">
                 <p className="text-[14px] mb-5">Player of the match</p>
                 <div className="flex items-center gap-x-3">
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div>
                       <Image
                         src="/player.png"

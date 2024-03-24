@@ -37,7 +37,7 @@ const StatesTable = () => {
               >
                 <td className="w-[5%]">{player.id}</td>
                 <td className="flex items-center w-[20%] gap-x-1">
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div className="relative">
                       <Image
                         src="/player.png"

@@ -56,7 +56,7 @@ const SeriesOverview = () => {
               </p>
               <div className="flex items-center justify-between ">
                 <div className="flex items-center ">
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div className="mt-2 ml-4 -mb-2">
                       <Image
                         src="/player.png"

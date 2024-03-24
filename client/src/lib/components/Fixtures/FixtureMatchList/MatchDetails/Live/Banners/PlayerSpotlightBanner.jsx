@@ -40,7 +40,7 @@ const PlayerSpotlightBanner = ({ player }) => {
           <Image src="/team.png" width={150} height={150} />
         </div>
         <div className="flex items-center gap-x-8">
-          <Link href="/player-profile">
+          <Link href={`/player-profile/${1}`}>
             <div className="relative -mb-8">
               <Image
                 src="/player.png"

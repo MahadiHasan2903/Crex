@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { MdChevronRight } from "react-icons/md";
 import { LuMinus } from "react-icons/lu";
+import Link from "next/link";
 
 const PlayerRankingTable = ({ topPlayers, format }) => {
   return (
@@ -13,7 +14,7 @@ const PlayerRankingTable = ({ topPlayers, format }) => {
             <div className="absolute dark:bg-[#15222E] bg-[#F7F7F7] -ml-8 mt-7 z-[9999999] flex items-center justify-center rounded-[25px]">
               <Image src="/BD.png" width={30} height={30} alt="team" />
             </div>
-            <Link href="/player-profile">
+            <Link href={`/player-profile/${1}`}>
               <div className="absolute -ml-4 -mt-9">
                 <Image
                   src="/player.png"

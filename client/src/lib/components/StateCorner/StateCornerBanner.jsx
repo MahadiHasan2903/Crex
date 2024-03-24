@@ -80,7 +80,7 @@ const StateCornerBanner = () => {
                   <p className="text-[23px] font-semibold opacity-70 ">
                     S Hasan
                   </p>
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div className="relative">
                       <Image
                         src="/player.png"
@@ -102,7 +102,7 @@ const StateCornerBanner = () => {
                     S Hasan
                   </p>
 
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div className="relative">
                       <Image
                         src="/player.png"
@@ -124,7 +124,7 @@ const StateCornerBanner = () => {
                   <p className="text-[23px] font-semibold opacity-70 ">
                     S Hasan
                   </p>
-                  <Link href="/player-profile">
+                  <Link href={`/player-profile/${1}`}>
                     <div className="relative">
                       <Image
                         src="/player.png"

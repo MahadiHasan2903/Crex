@@ -123,7 +123,7 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <Link href="/player-profile">
+                        <Link href={`/player-profile/${1}`}>
                           <div>
                             <Image
                               src="/player.png"
@@ -165,7 +165,7 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <Link href="/player-profile">
+                        <Link href={`/player-profile/${1}`}>
                           <div>
                             <Image
                               src="/player.png"
@@ -211,7 +211,7 @@ const SeriesSquads = () => {
                         key={index}
                         className="flex items-center pb-2 my-2 border-b border-black gap-x-5 dark:border-white border-opacity-5 dark:border-opacity-5"
                       >
-                        <Link href="/player-profile">
+                        <Link href={`/player-profile/${1}`}>
                           <div>
                             <Image
                               src="/player.png"

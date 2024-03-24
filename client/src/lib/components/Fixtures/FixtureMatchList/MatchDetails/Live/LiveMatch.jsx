@@ -164,7 +164,7 @@ const LiveMatch = () => {
           <p className="text-[18px] font-medium">Player of the Match</p>
 
           <div className="flex items-center mt-5 gap-x-5">
-            <Link href="/player-profile">
+            <Link href={`/player-profile/${1}`}>
               <div className="relative">
                 <Image
                   src="/player.png"
