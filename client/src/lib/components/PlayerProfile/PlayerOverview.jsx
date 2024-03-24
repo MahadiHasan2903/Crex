@@ -190,39 +190,53 @@ const PlayerOverview = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showLeftButton, setShowLeftButton] = useState(false);
   const [showRightButton, setShowRightButton] = useState(true);
-
   const [showModal, setShowModal] = useState(false);
 
+  // Function to toggle the visibility of the modal
   const toggleModal = () => {
     setShowModal(!showModal);
   };
+
+  // Number of items to display per page
   const itemsPerPage = 6;
+
+  // Calculate the maximum index for pagination
   const maxIndex = playerPerformance.length - itemsPerPage;
 
+  // Function to handle the next button click for pagination
   const handleNextClick = () => {
+    // Increment current index by items per page
     if (currentIndex < maxIndex) {
       setCurrentIndex(currentIndex + itemsPerPage);
     }
+    // Hide right button if at the end of data
     if (currentIndex + itemsPerPage >= maxIndex) {
       setShowRightButton(false);
     }
+    // Show left button
     setShowLeftButton(true);
   };
 
+  // Function to handle the previous button click for pagination
   const handlePrevClick = () => {
+    // Decrement current index by items per page
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - itemsPerPage);
     }
+    // Hide left button if at the beginning of data
     if (currentIndex - itemsPerPage <= 0) {
       setShowLeftButton(false);
     }
+    // Show right button
     setShowRightButton(true);
   };
 
+  // Function to handle button click and set active button
   const handleButtonClick = (button) => {
     setActiveButton(button);
   };
 
+  // Function to determine active button styles
   const isButtonActive = (button) => {
     return activeButton === button
       ? "text-[#1860a6] bg-[#1860a614] border border-[#6EB4EF4D] dark:text-[#6Eb4EF] dark:bg-[#6Eb4EF14]"
@@ -230,16 +244,21 @@ const PlayerOverview = () => {
   };
 
   useEffect(() => {
+    // This effect runs when the value of showModal changes
     if (showModal) {
+      // If showModal is true, set the overflow of the body to "hidden"
       document.body.style.overflow = "hidden";
     } else {
+      // If showModal is false, set the overflow of the body to "auto"
       document.body.style.overflow = "auto";
     }
 
+    // Cleanup function: This function runs when the component unmounts or when the value of showModal changes.
+    // It ensures that the overflow of the body is set back to "auto" to prevent issues.
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [showModal]);
+  }, [showModal]); // This effect depends on the value of showModal
 
   return (
     <div className="relative flex justify-center">
