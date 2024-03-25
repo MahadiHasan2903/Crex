@@ -11,6 +11,7 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import PlayerBio from "./PlayerBio";
+import Image from "next/image";
 
 const playerPerformance = [
   { matchId: 1, score: "1(4)", match: "RGR vs CV, BPL" },
@@ -185,6 +186,28 @@ const playedFor = [
   "Brampton Wolves",
 ];
 
+const newsData = [
+  {
+    src: "/cover.png",
+    date: "12 MAR 2024",
+    author: "VAIBHAV TRIPATHI",
+    title:
+      "‘I Am Not…’: Tamim Iqbal Makes Another Shocking Statement On Shakib Al Hasan",
+  },
+  {
+    src: "/cover.png",
+    date: "13 MAR 2024",
+    author: "JOHN DOE",
+    title: "New Discovery in Space Exploration",
+  },
+  {
+    src: "/cover.png",
+    date: "14 MAR 2024",
+    author: "EMMA SMITH",
+    title: "World Health Organization's Latest Report on Pandemic",
+  },
+];
+
 const PlayerOverview = () => {
   const [activeButton, setActiveButton] = useState("Batting");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -243,27 +266,10 @@ const PlayerOverview = () => {
       : "border dark:border-white border-opacity-5 dark:border-opacity-5";
   };
 
-  useEffect(() => {
-    // This effect runs when the value of showModal changes
-    if (showModal) {
-      // If showModal is true, set the overflow of the body to "hidden"
-      document.body.style.overflow = "hidden";
-    } else {
-      // If showModal is false, set the overflow of the body to "auto"
-      document.body.style.overflow = "auto";
-    }
-
-    // Cleanup function: This function runs when the component unmounts or when the value of showModal changes.
-    // It ensures that the overflow of the body is set back to "auto" to prevent issues.
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [showModal]); // This effect depends on the value of showModal
-
   return (
     <div className="relative flex justify-center">
       <div className="w-[70%] flex items-start mt-10 text-[#4A4A4A] dark:text-[#CFD1D3]">
-        <div className="border-r w-[70%] px-10 mr-10 border-black dark:border-white border-opacity-5 dark:border-opacity-5">
+        <div className="border-r w-[70%] px-10 mr-8 border-black dark:border-white border-opacity-5 dark:border-opacity-5">
           <div className="flex items-center justify-between pb-5 border-b dark:border-white border-opacity-5 dark:border-opacity-5">
             <p className="text-[24px] font-medium">Career & Stats </p>
             <div className="flex items-center ">
@@ -467,7 +473,24 @@ const PlayerOverview = () => {
             </div>
           </div>
         </div>
-        <div>right</div>
+        <div>
+          <p className="text-[24px] font-medium mb-10">Last Updates</p>
+          {newsData.map((news, index) => (
+            <div key={index} className="mb-10">
+              <Image src={news.src} width={295} height={170} alt="news" />
+              <p className="text-[12px] text-[#9FA3A7] font-bold my-3">
+                {news.author} ∙ {news.date}
+              </p>
+              <p className="text-[16px]  font-bold">{news.title}</p>
+            </div>
+          ))}
+
+          <Link href={`/player-profile/${1}/news`}>
+            <p className="dark:text-[#6EB4EF] text-[#1860A6] flex items-center gap-x-1 mt-12 text-[14px]">
+              More News <MdChevronRight />
+            </p>
+          </Link>
+        </div>
       </div>
       {showModal && <PlayerBio onClose={toggleModal} />}
     </div>
